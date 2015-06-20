@@ -1,0 +1,673 @@
+Script started on Fri 30 Nov 2012 01:19:11 AM PST
+~
+svill017@well $ ls
+[0m[01;34mcs010[0m/  [01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mex3.asm[0m*                [01;34msummer[0m/     [01;34mWINDOWS[0m/
+[01;34mcs012[0m/  [01;34mcs100[0m/  [01;34mDesktop[0m/  [01;32mFirefox_wallpaper.png[0m*  [0mtypescript[0m  [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hw8
+~/cs100/hw/hw8
+svill017@well $ ls
+[0m[01;32ma.out[0m*    [0mcclient.cpp[0m  [0mcserver.cpp[0m  [0miclient.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[01;32mcclient[0m*  [01;32mcserver[0m*     [01;32miclient[0m*     [01;32miserver[0m*     [01;32mMakefile[0m*     [0mtypescript[0m
+[m~/cs100/hw/hw8
+svill017@well $ make clean
+rm iclient iserver cserver cclient
+~/cs100/hw/hw8
+svill017@well $ ls
+[0m[01;32ma.out[0m*       [0mcserver.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[0mcclient.cpp[0m  [0miclient.cpp[0m  [01;32mMakefile[0m*     [0mtypescript[0m
+[m~/cs100/hw/hw8
+svill017@well $ make
+g++ -ggdb iclient.cpp -o iclient
+g++ -ggdb iserver.cpp -o iserver
+g++ -ggdb cserver.cpp -o cserver
+g++ -ggdb cclient.cpp -o cclient
+~/cs100/hw/hw8
+svill017@well $ ls
+[0m[01;32ma.out[0m*    [0mcclient.cpp[0m  [0mcserver.cpp[0m  [0miclient.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[01;32mcclient[0m*  [01;32mcserver[0m*     [01;32miclient[0m*     [01;32miserver[0m*     [01;32mMakefile[0m*     [0mtypescript[0m
+[m~/cs100/hw/hw8
+svill017@well $ rm a.out
+/bin/rm: remove regular file `a.out'? y
+~/cs100/hw/hw8
+svill017@well $ ls
+[0m[01;32mcclient[0m*     [01;32mcserver[0m*     [01;32miclient[0m*     [01;32miserver[0m*      [01;32mMakefile[0m*      [0mtypescript[0m
+[0mcclient.cpp[0m  [0mcserver.cpp[0m  [0miclient.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[m~/cs100/hw/hw8
+svill017@well $ make clean
+rm iclient iserver cserver cclient
+~/cs100/hw/hw8
+svill017@well $ ls
+[0m[0mcclient.cpp[0m  [0miclient.cpp[0m   [01;32mMakefile[0m*      [0mtypescript[0m
+[0mcserver.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[m~/cs100/hw/hw8
+svill017@well $ make
+g++ -ggdb iclient.cpp -o iclient
+g++ -ggdb iserver.cpp -o iserver
+g++ -ggdb cserver.cpp -o cserver
+g++ -ggdb cclient.cpp -o cclient
+~/cs100/hw/hw8
+svill017@well $ ls
+[0m[01;32mcclient[0m*     [01;32mcserver[0m*     [01;32miclient[0m*     [01;32miserver[0m*      [01;32mMakefile[0m*      [0mtypescript[0m
+[0mcclient.cpp[0m  [0mcserver.cpp[0m  [0miclient.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[m~/cs100/hw/hw8
+svill017@well $ iserver
+SERVER is UP and READY!
+~/cs100/hw/hw8
+svill017@well $ iserverls[Kiserverls[Kmake[2Plsiserver[Kexit
+exit
+
+Script done on Fri 30 Nov 2012 01:20:05 AM PST
+Script started on Fri 30 Nov 2012 01:20:24 AM PST
+~
+svill017@well $ ls
+[0m[01;34mcs010[0m/  [01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mex3.asm[0m*                [01;34msummer[0m/     [01;34mWINDOWS[0m/
+[01;34mcs012[0m/  [01;34mcs100[0m/  [01;34mDesktop[0m/  [01;32mFirefox_wallpaper.png[0m*  [0mtypescript[0m  [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hw8
+~/cs100/hw/hw8
+svill017@well $ ls
+[0m[01;32mcclient[0m*     [01;32mcserver[0m*     [01;32miclient[0m*     [01;32miserver[0m*      [01;32mMakefile[0m*      [0mtypescript[0m
+[0mcclient.cpp[0m  [0mcserver.cpp[0m  [0miclient.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[m~/cs100/hw/hw8
+svill017@well $ lscd cs100/hw/hw8ls[Kexitiserverls[Kiserver[3Pexit[2Plscd cs100/hw/hw8ls[K[Kiclient #[K$HOSTNAME /bin
+connect(): Connection refused
+the remote host is well.cs.ucr.edu~/cs100/hw/hw8
+svill017@well $ iclient $HOSTNAME /bin
+the remote host is well.cs.ucr.edutotal 8980
+-rwxr-xr-x 1 root root    8992 Feb 22  2012 alsacard
+-rwxr-xr-x 1 root root   21248 Feb 22  2012 alsaunmute
+-rwxr-xr-x 1 root root    7440 Nov  8 01:23 arch
+lrwxrwxrwx 1 root root       4 Sep 19 05:52 awk -> gawk
+-rwxr-xr-x 1 root root   20984 Mar 21  2012 basename
+-rwxr-xr-x 1 root root  801528 Jul 21  2011 bash
+-rwxr-xr-x 1 root root   25248 Mar 21  2012 cat
+-rwxr-xr-x 1 root root   42944 Mar 21  2012 chgrp
+-rwxr-xr-x 1 root root   40216 Mar 21  2012 chmod
+-rwxr-xr-x 1 root root   45584 Mar 21  2012 chown
+-rwxr-xr-x 1 root root   71016 Mar 21  2012 cp
+-rwxr-xr-x 1 root root  110280 Mar 15  2010 cpio
+lrwxrwxrwx 1 root root       4 Sep 19 05:55 csh -> tcsh
+-rwxr-xr-x 1 root root   36648 Mar 21  2012 cut
+-rwxr-xr-x 1 root root   52800 Mar 21  2012 date
+-rwxr-xr-x 1 root root   12592 Aug 11  2011 dbus-cleanup-sockets
+-rwxr-xr-x 1 root root  306992 Aug 11  2011 dbus-daemon
+-rwxr-xr-x 1 root root   16008 Aug 11  2011 dbus-monitor
+-rwxr-xr-x 1 root root   19736 Aug 11  2011 dbus-send
+-rwxr-xr-x 1 root rrwxrwx 1 root root       4 Sep 19 05:55 csh -> tcsh
+-rwxr-xr-x 1 root root   36648 Mar 21  2012 cut
+-rwxr-xr-x 1 root root   52800 Mar 21  2012 date
+-rwxr-xr-x 1 root root   12oot   10144 Aug 11  2011 dbus-uuidgen
+-rwxr-xr-x 1 root root   45880 Mar 21  2012 dd
+-rwxr-xr-x 1 root root   43192 Mar 21  2012 df
+-rwxr-xr-x 1 root root    9680 Nov  8 01:23 dmesg
+lrwxrwxrwx 1 root root       8 Sep 19 05:54 dnsdomainname -> hostname
+-rwxr-xr-x 1 root root    7048 Aug  9 07:06 doexec
+lrwxrwxrwx 1 root root       8 Sep 19 05:54 domainname -> hostname
+-rwxr-xr-x 1 root root   79088 Jan 20  2009 dumpkeys
+-rwxr-xr-x 1 root root   22856 Mar 21  2012 echo
+-rwxr-xr-x 1 root root   49344 Oct 23  2008 ed
+lrwxrwxrwx 1 root root       4 Sep 19 05:52 egrep -> grep
+-rwxr-xr-x 1 root root   20880 Mar 21  2012 env
+lrwxrwxrwx 1 root root       2 Sep 19 05:55 ex -> vi
+-rwxr-xr-x 1 root root   19304 Mar 21  2012 false
+lrwxrwxrwx 1 root root       4 Sep 19 05:52 fgrep -> grep
+-rwxr-xr-x 1 root root  338744 Feb 23  2012 gawk
+-rwxr-xr-x 1 root root   29968 Mar  5  2011 gettext
+-rwxr-xr-x 1 root root   88896 Sep 26  2009 grep
+lrwxrwxrwx 1 root root       3 Sep 19 15:00 gtar -> tar
+-rwxr-xr-x 3 root root   64056 Jul 22  2011 gunzip
+-rwxr-xr-x 3 root root   64056 Jul 22  2011 gzip
+-rwxr-xr-x 1 root root   15912 Feb 22  2012 hostname
+-rwxr-xr-x 1 root root    3089 Feb 23  2012 igawk
+-rwxr-xr-x 1 root root   36760 Aug  9 07:06 ipcalc
+-rwxr-xr-x 1 root root   10336 Jan 20  2009 kbd_mode
+-rwxr-xr-x 1 root root   23776 Jan  5  2007 keyctl
+-rwxr-xr-x 1 root root   14864 Nov  8 01:23 kill
+lrwxrwxrwx 1 root root      21 Sep 19 05:56 ksh -> /etc/alternatives/ksh
+-rwxr-xr-x 1 root root 1317944 Mar 28  2012 ksh93
+-rwxr-xr-x 1 root root   20696 Mar 21  2012 link
+-rwxr-xr-x 1 root root   31888 Mar 21  2012 ln
+-rwxr-xr-x 1 root root  104048 Jan 20  2009 loadkeys
+-rwxr-xr-x 1 root root  661496 Jan 20  2009 loadkeys.static
+-rwxr-xr-x 1 root root   14776 Nov  8 01:23 logger
+-rwxr-xr-x 1 root root   28504 Nov  8 01:23 login
+-rwxr-xr-x 1 root root   91272 Mar 21  2012 ls
+-rwxr-xr-x 1 root mail   84856 Jan  6  2007 mail
+lrwxrwxrwx 1 root root       4 Sep 19 05:59 mailx -> mail
+-rwxr-xr-x 1 root root   31664 Mar 21  2012 mkdir
+-rwxr-xr-x 1 root root   26192 Mar 21  2012 mknod
+-rwxr-xr-x 1 root root   12824 Feb 23  2012 mktemp
+-rwxr-xr-x 1 root root   35880 Nov  8 01:23 more
+-rwsr-xr-x 1 root root   61656 Nov  8 01:23 mount
+-rwxr-xr-x 1 root root    9888 Jul 21  2011 mountpoint
+-rwxr-xr-x 1 root root   80488 Mar 21  2012 mv
+-rwxr-xr-x 1 root root  125936 Feb 22  2012 netstat
+-rwxr-xr-x 1 root root   23424 Mar 21  2012 nice
+lrwxrwxrwx 1 root root       8 Sep 19 05:54 nisdomainname -> hostname
+-rwxr-xr-x 1 root root  338760 Feb 23  2012 pgawk
+-rwsr-xr-x 1 root root   37312 Sep 26  2009 ping
+-rwsr-xr-x 1 root root   32736 Sep 26  2009 ping6
+-r-xr-xr-x 1 root root   83696 Feb 23  2012 ps
+-rwxr-xr-x 1 root root   25416 Mar 21  2012 pwd
+-rwxr-xr-x 1 root root   10416 Nov  8 01:23 raw
+lrwxrwxrwx 1 root root       2 Sep 19 05:52 red -> ed
+-rwxr-xr-x 1 root root     576 Apr 16  2008 redhat_lsb_init
+-rwxr-xr-x 1 root root   47088 Mar 21  2012 rm
+-rwxr-xr-x 1 root root   21232 Mar 21  2012 rmdir
+-rwxr-xr-x 1 root root   91752 Apr  3  2012 rpm
+lrwxrwxrwx 1oot root   83696 Feb 23  2012 ps
+-rwxr-xr-x 1 root root   25416 Mar 21  2012 pwd
+-rwxr-xr-x 1 root root   10416 Nov  8 01:23 raw root root       2 Sep 19 05:55 rvi -> vi
+lrwxrwxrwx 1 root root       2 Sep 19 05:55 rview -> vi
+-rwxr-xr-x 1 root root   55472 May  4  2011 sed
+-rwxr-xr-x 1 root root   38488 Jan 20  2009 setfont
+-rwxr-xr-x 1 root root   22984 Jan  9  2007 setserial
+lrwxrwxrwx 1 root root       4 Sep 19 05:52 sh -> bash
+-rwxr-xr-x 1 root root   21984 Mar 21  2012 sleep
+-rwxr-xr-x 1 root root   58592 Mar 21  2012 sort
+-rwxr-xr-x 1 root root   47888 Mar 21  2012 stty
+-rwsr-xr-x 1 root root   28336 Mar 21  2012 su
+-rwxr-xr-x 1 root root   20216 Mar 21  2012 sync
+-rwxr-xr-x 1 root root  230464 May 14  2012 tar
+-rwxr-xr-x 1 root root   13240 Nov  8 01:23 taskset
+lrwxrwxrwx 1 root root      10 Sep 19 05:53 tcptraceroute -> traceroute
+-rwxr-xr-x 1 root root  352904 Nov  3  2010 tcsh
+-rwxr-xr-x 1 root root   42696 Mar 21  2012 touch
+-rwxr-xr-x 1 root root   11176 Sep 26  2009 tracepath
+-rwxr-xr-x 1 root root   11664 Sep 26  2009 tracepath6
+-rwxr-xr-x 1 root root   41248 Apr 28  2011 traceroute
+lrwxrwxrwx 1 root root      10 Sep 19 13240 Nov  8 01:23 taskset
+lrwxrwxrwx 1 root root      10 Sep 19 05:53 tcptraceroute -> traceroute
+-rwxr-xr-x 1 root root  352904 Nov  3  2010 tcsh
+-rwxr-xr-x 1 root root   42605:53 traceroute6 -> traceroute
+lrwxrwxrwx 1 root root      10 Sep 19 05:53 tracert -> traceroute
+-rwxr-xr-x 1 root root   19304 Mar 21  2012 true
+-rwsr-xr-x 1 root root   41592 Nov  8 01:23 umount
+-rwxr-xr-x 1 root root   22336 Mar 21  2012 uname
+-rwxr-xr-x 1 root root    1273 Jan 20  2009 unicode_start
+-rwxr-xr-x 1 root root      79 Jan 20  2009 unicode_stop
+-rwxr-xr-x 1 root root   20576 Mar 21  2012 unlink
+-rwxr-xr-x 1 root root   31280 Aug  9 07:06 usleep
+-rwxr-xr-x 1 root root  632880 Mar  5  2011 vi
+lrwxrwxrwx 1 root root       2 Sep 19 05:55 view -> vi
+lrwxrwxrwx 1 root root       8 Sep 19 05:54 ypdomainname -> hostname
+-rwxr-xr-x 3 root root   64056 Jul 22  2011 zcat
+-rwxr-xr-x 1 root root  596912 Feb 22  2012 zsh
+ 79 Jan 20  2009 unicode_stop
+-rwxr-xr-x 1 root root   20576 Mar 21
+done reading
+~/cs100/hw/hw8
+svill017@well $ iclient $HOSTNAME /bin[K[K[Ketc
+connect(): Connection refused
+the remote host is well.cs.ucr.edu~/cs100/hw/hw8
+svill017@well $ iclient $HOSTNAME /etc
+the remote host is well.cs.ucr.edutotal 4636
+-rw-r--r--  1 root root   15288 May 24  2008 a2ps.cfg
+-rw-r--r--  1 root root    2562 May 24  2008 a2ps-site.cfg
+drwxr-xr-x  4 root root    4096 Sep 19 05:58 acpi
+-rw-r--r--  1 root root      44 Oct 28 11:52 adjtime
+drwxr-xr-x  4 root root    4096 Sep 19 05:57 alchemist
+-rw-r--r--  1 root root    1512 Apr 25  2005 aliases
+-rw-r-----  1 root smmsp  12288 Oct 28 11:55 aliases.db
+drwxr-xr-x  4 root root    4096 Sep 19 05:56 alsa
+drwxr-xr-x  2 root root    4096 Oct 18 15:25 alternatives
+-rw-r--r--  1 root root     298 Mar 27  2007 anacrontab
+-rw-r--r--  1 root root     395 Nov 22  2006 ant.conf
+drwxr-xr-x  2 root root    4096 Jan  6  2007 ant.d
+drwxr-xr-x  3 root root    4096 Sep 19 07:48 apt
+-rw-------  1 root root       1 Jan 26  2010 at.deny
+drwxr-x---  3 root root    4096 Sep 19 05:55 audisp
+drwxr-x---  2 root root    4096 Sep 19 05:55 audit
+-rw-------  1 root root    3902 Apr 20  2012 autofs_ldap_auth.conf
+-rw-r--r--  1 root root     717 Apr 20  2012 auto.master
+-rw-r--r--  1 root root     581 Apr 20  2012 auto.misc
+-rwxr-xr-x  1 root root    1292 Apr 20  2012 auto.net
+-rwxr-xr-x  1 root root     742 Apr 20  2012 auto.smb
+drwxr-xr-x  4 root root    4096 Sep 19 05:58 avahi
+drwxr-xr-x  2 root root    4096 Sep 19 16:54 bash_completion.d
+-rw-r--r--  1 root root    1872 Feb 22  2012 bashrc
+drwxr-xr-x  2 root root    4096 Nov 14 18:16 blkid
+drwxr-xr-x  2 root root    4096 Sep 19 05:58 bluetooth
+drwxr-xr-x  2 root root    4096 Sep 19 05:58 bonobo-activation
+-rw-r--r--  1 root root     351 Sep 19  2009 capi.conf
+-rw-r--r--  1 root root     977 Mar 11  2009 cdrecord.conf
+-rw-r--r--  1 root root    6308 Nov 11  2007 conman.conf
+drwx------  2 root root    4096 Sep 19 16:07 cron.d
+drwxr-xr-x  2 root root    4096 Sep 19 16:17 cron.daily
+-rw-r--r--  1 root root       0 Sep 19 05:57 cron.deny
+drwxr-xr-x  2 root root    4096 Sep 19 05:53 cron.hourly
+drwxr-xr-x  2 root root    4096 Sep 19 05:53 cron.monthly
+-rw-r--r--  1 root root     567 Nov 28 21:13 crontab
+drwxr-xr-x  2 root root    4096 Sep 19 05:58 cron.weekly
+-rnman.conf
+drwx------  2 root root    4096 Sep 19 16:07 cron.d
+drwxr-xr-x  2 root root    4096 Sep 19 16:17 cron.daily
+-rw-r--r--  1 root root       0 Sep 19 05:57 cron.deny
+drwxr-xr-x  2 root root    4096 Sep 19 05:53 cron.hourly
+drwxr-xr-x  2 root root    4096 Sep 19 05:53 cron.monthly
+-rw-r--r--  1 root root     567 Nov 28 21:13 crontab
+drwxr-xr-x w-r--r--  1 root root    1044 Feb 22  2012 csh.cshrc
+-rw-r--r--  1 root root     823 Feb 22  2012 csh.login
+drwxr-xr-x  5 root lp      4096 Sep 19 05:57 cups
+drwxr-xr-x  4 root root    4096 Sep 19 05:56 dbus-1
+drwxr-xr-x  2 root root    4096 Sep 19 14:57 default
+drwxr-xr-x  2 root root    4096 Sep 19 06:00 depmod.d
+drwxr-xr-x  2 root root    4096 Feb 22  2012 desktop-profiles
+drwxr-xr-x  3 root root    4096 Sep 19 05:57 dev.d
+-rw-r--r--  1 root root     178 Mar  5  2011 dhcp6c.conf
+-rw-r--r--  1 root root    2518 Mar 21  2012 DIR_COLORS
+-rw-r--r--  1 root root    2420 Mar 21  2012 DIR_COLORS.xterm
+-rw-r--r--  1 root root   18484 Sep  1  2009 dnsmasq.conf
+drwxr-xr-x  2 root root    4096 Sep  1  2009 dnsmasq.d
+-rw-rw-r--  1 root disk       0 Feb 23  2012 dumpdates
+-rw-r--r--  1 root root    4843 Dec 15  2008 enscript.cfg
+-rw-r--r--  1 root root       0 Feb 22  2012 environment
+-rw-r--r--  1 root root     153 Feb 22  2012 esd.conf
+-rw-r--r--  1 root root      49 Oct 10 19:23 exports
+-rw-r--r--  1 root root   220root   18484 Sep  1  2009 dnsmasq.conf
+drwxr-xr-x  2 root root    4096 Sep  1  2009 dnsmasq.d
+-rw-rw-r--  1 root disk       0 Feb 23  2012 dumpdates
+-rw-r--r--  1 root root    60 Jan  6  2007 fb.modes
+-rw-r--r--  1 root root      59 Jan 31  2006 filesystems
+drwxr-xr-x  4 root root    4096 Sep 19 05:56 fonts
+drwxr-xr-x  2 root root    4096 Sep 19 05:57 foomatic
+-rw-r--r--  1 root root     948 Oct 28 11:52 fstab
+drwxr-xr-x  6 root root    4096 Sep 19 05:55 gconf
+drwxr-xr-x  2 root root    4096 Apr 16  2012 gcrypt
+drwxr-xr-x  7 root root    4096 Sep 19 06:05 gdm
+drwxr-xr-x  2 root root    4096 Sep 19 15:29 ghostscript
+drwxr-xr-x  4 root root    4096 Aug 20 07:36 gimp
+drwxr-xr-x  3 root root    4096 Apr 28  2011 gnome-vfs-2.0
+-rw-r--r--  1 root root   10793 Jan  5  2007 gnome-vfs-mime-magic
+-rw-r--r--  1 root root    1756 Jan  6  2007 gpm-root.conf
+-rw-r--r--  1 root root     808 Oct 10 17:19 group
+-rw-------  1 root root     796 Sep 19 18:26 group-
+lrwxrwxrwx  1 root root      22 Sep 19 06:08 grub.conf -> ../boot/grub/grub.conf
+-r--------  1 root root     669 Oct 10 17:19 gshadow
+-rw-------  1 root root     660 Sep 19 18:26 gshadow-
+-rw-r--r--  1 root root     833 Mar 14  2007 gssapi_w-r--r--  1 root root    1756 Jan  6  2007 gpm-root.conf
+-rw-r--r--  1 root root     808 Oct 10 17:19 group
+-rw-------  1 root root     796 Sep 19 18:26 group-
+lrwxrwxrwx  1 romech.conf
+drwxr-xr-x  2 root root    4096 Sep 19 15:31 gtk
+drwxr-xr-x  4 root root    4096 Sep 19 05:58 gtk-2.0
+drwxr-xr-x  3 root root    4096 Mar  5  2011 hal
+-rw-r--r--  1 root root       0 Feb 22  2012 host.conf
+-rw-r--r--  1 root root     223 Oct  3 17:49 hosts
+-rw-r--r--  1 root root     161 Jan 12  2000 hosts.allow
+-rw-r--r--  1 root root     165 Feb 22  2012 hosts.deny
+drwxr-xr-x  2 root root    4096 Sep 19 05:57 hp
+drwxr-xr-x  2 root root    4096 Sep 19 05:55 htdig
+drwxr-xr-x  4 root root    4096 Nov 12 21:40 httpd
+-rw-r--r--  1 root root    3579 Feb 25  2012 idmapd.conf
+lrwxrwxrwx  1 root root      11 Sep 19 05:52 init.d -> rc.d/init.d
+-rw-r--r--  1 root root     658 Aug  9 07:06 initlog.conf
+-rw-r--r--  1 root root    1666 Aug  9 07:06 inittab
+-rw-r--r--  1 root root     758 Sep 22  2004 inputrc
+drwxr-xr-x  2 root root    4096 Sep 19 05:52 iproute2
+-r-xr-xr-x  1 root root   12042 Aug 28 14:06 iptables.orig
+-rwxr-xr-x  1 root root   12333 Oct 10 15:48 iptables.rules
+-rwxr-xr-x  1 root root   12333 O9 05:52 init.d -> rc.d/init.d
+-rw-r--r--  1 root root     658 Aug  9 07:06 initlog.conf
+-rw-r--r--  1 root root    1666 Aug  9 07:06 inittab
+-rw-r--r--  1 root root     758 Sepct 10 15:48 iptables.rules.20121031
+drwxr-xr-x  2 root root    4096 Sep 19 05:57 iscsi
+drwxr-xr-x  2 root root    4096 Sep 19 06:01 isdn
+-rw-r--r--  1 root root      47 Feb 25  2012 issue
+-rw-r--r--  1 root root      46 Feb 25  2012 issue.net
+drwxr-xr-x  3 root root    4096 Sep 19 05:53 java
+drwxr-xr-x  2 root root    4096 Mar 14  2007 jvm
+drwxr-xr-x  2 root root    4096 Mar 14  2007 jvm-commmon
+-rw-r--r--  1 root root   32016 May  4  2011 jwhois.conf
+drwxr-xr-x  4 root root    4096 Sep 19 06:02 kde
+-rw-r--r--  1 root root     315 Feb 23  2012 kderc
+-rw-r--r--  1 root root    1154 Sep 19 15:00 kdump.conf
+-rw-r--r--  1 root root   11598 Jan 26  2011 kismet.conf
+-rw-r--r--  1 root root    2146 Jan 26  2011 kismet_drone.conf
+-rw-r--r--  1 root root     632 Nov  4  2009 krb5.conf
+-rw-r--r--  1 root root     848 Sep 10  2005 ksysguarddrc
+-rw-r--r--  1 root root    9111 Sep 19 06:08 ldap.conf
+-rw-r--r--  1 root root  197794 Nov 28 17:40 ld.so.cache
+-rw-r--r--  1 root root      28 Oct  8  2006 ld.so.conf
+drwxr-xr-x 1 root root   11598 Jan 26  2011 kismet.conf
+-rw-r--r--  1 root root    2146 Jan 26  2011 kismet_drone.conf
+-rw-r--r--  1 root root     632 Nov  4  2009 krb5.conf
+-rw-r--r--  1 2 root root    4096 Nov 28 17:40 ld.so.conf.d
+-rw-r--r--  1 root root    3544 Feb 23  2012 lftp.conf
+-rw-r-----  1 root root     191 Oct 27  2011 libaudit.conf
+drwxr-xr-x  2 root root    4096 Sep 19 15:43 libgda-3.0
+drwxr-xr-x  2 root root    4096 Apr 18  2010 libibverbs.d
+-rw-r--r--  1 root root    2506 Sep 19 06:08 libuser.conf
+-rw-r--r--  1 root root     262 Jul  4  2011 lisarc
+-rw-r--r--  1 root root    2819 Sep 19 06:08 localtime
+-rw-r--r--  1 root root    1522 Sep 19 06:08 login.defs
+-rw-r--r--  1 root root     619 May 18  2011 logrotate.conf
+drwxr-xr-x  2 root root    4096 Nov 12 21:40 logrotate.d
+drwxr-xr-x  4 root root    4096 Sep 19 05:56 logwatch
+drwxr-xr-x  2 root root    4096 Sep 19 05:59 lsb-release.d
+-rw-r--r--  1 root root   10814 Feb 20  2006 ltrace.conf
+drwxr-xr-x  5 root root    4096 Sep 19 05:55 lvm
+-rw-r--r--  1 root root  140191 Oct 27  2008 lynx.cfg
+-rw-r--r--  1 root root      66 Oct 27  2008 lynx-site.cfg
+drwxr-xr-x  2 root root    4096 Sep 19 05:57 mail
+-rw-r--r--  1 root root     2 4 root root    4096 Sep 19 05:56 logwatch
+drwxr-xr-x  2 root root    4096 Sep 19 05:59 lsb-release.d
+-rw-r--r--  1 root root   10814 Feb 20  2006 ltrace.conf
+drwxr-xr-x  5 roo93 Jan  6  2007 mailcap
+-rw-r--r--  1 root root     112 Jan  6  2007 mail.rc
+drwxr-xr-x  2 root root    4096 Sep 19 05:55 makedev.d
+-rw-r--r--  1 root root    4617 Jul 21  2011 man.config
+drwxr-xr-x  2 root root    4096 Sep 19 05:53 maven
+-rwxr-xr-x  1 root root    2242 May 18  2011 mcelog.conf
+-rw-r--r--  1 root root     346 Sep 19 07:26 mdadm.conf
+drwxr-xr-x  3 root root    4096 Jun  8 08:15 mercurial
+drwxr-xr-x  2 root root    4096 Sep 19 05:53 mgetty+sendfax
+-rw-r--r--  1 root root   14100 Jan  6  2007 mime.types
+-rw-r--r--  1 root root    1112 Jan  6  2007 minicom.users
+-rw-r--r--  1 root root     330 Jun 20 04:04 mke2fs.conf
+-rw-r--r--  1 root root     126 Sep 19 05:48 modprobe.conf
+drwxr-xr-x  2 root root    4096 Nov 14 18:15 modprobe.d
+-rw-r--r--  1 root root       0 Jan 12  2000 motd
+-rw-r--r--  1 root root    1404 Nov 29 14:34 mtab
+-rw-r--r--  1 root root    1983 Jan  6  2007 mtools.conf
+-rw-r--r--  1 root root    2706 Apr  2  2012 multipath.conf
+-rw-r--r--  1 root root   92794 Jun  4  2007 Muttrc
+-04 mke2fs.conf
+-rw-r--r--  1 root root     126 Sep 19 05:48 modprobe.conf
+drwxr-xr-x  2 root root    4096 Nov 14 18:15 modprobe.d
+-rw-r--r--  1 root root       0 Jan 12  2000 mrw-r--r--  1 root root       0 Jun  4  2007 Muttrc.local
+drwxr-xr-x  2 root root    4096 Sep 19 05:54 netplug
+drwxr-xr-x  2 root root    4096 Sep 19 05:54 netplug.d
+drwxr-xr-x  4 root root    4096 Sep 19 06:04 NetworkManager
+-rw-r--r--  1 root root    1895 Aug 27 06:39 nscd.conf
+-rw-r--r--  1 root root    1728 Aug  7 16:32 nsswitch.conf
+drwxr-xr-x  2 root root    4096 Sep 19 06:08 ntp
+-rw-r--r--  1 root root    1839 Nov 18  2011 ntp.conf
+drwxr-xr-x  2 nx   root    4096 Nov  9 14:40 nxserver
+drwxr-xr-x  2 nx   root    4096 Oct  9 13:36 nxserver.20121022
+drwxr-xr-x  2 nx   root    4096 Oct 22 15:35 nxserver.20121109
+-rw-r--r--  1 root root       0 Feb 22  2012 odbc.ini
+-rw-r--r--  1 root root    1366 Feb 22  2012 odbcinst.ini
+drwxr-xr-x  2 root root    4096 Feb 23  2012 oddjob
+-rw-r--r--  1 root root    4461 Jul 19  2006 oddjobd.conf
+drwxr-xr-x  2 root root    4096 Sep 19 05:57 oddjobd.conf.d
+drwxr-xr-x  2 root root    4096 Nov 28 17:40 ofed
+-rw-r--r--  1 root root     147 Dec 12  2007 openalrc
+drwxr-xr-x  3 row-r--r--  1 root root       0 Feb 22  2012 odbc.ini
+-rw-r--r--  1 root root    1366 Feb 22  2012 odbcinst.ini
+drwxr-xr-x  2 root root    4096 Feb 23  2012 oddjob
+-rw-r--r--  1 ot root    4096 Jul 12 01:07 openldap
+drwxr-xr-x  2 root root    4096 May 11  2011 opt
+drwxr-xr-x  2 root root    4096 Nov  9 14:40 pam.d
+drwxr-xr-x  2 root root    4096 Sep 19 05:58 pam_pkcs11
+-rw-r--r--  1 root root      12 Jan  5  2007 pam_smb.conf
+drwxr-xr-x  4 root root    4096 Sep 19 05:56 pango
+-rw-r--r--  1 root root    1951 Sep 19 16:17 passwd
+-rw-r--r--  1 root root    1894 Sep 19 15:56 passwd-
+drwxr-xr-x  2 root root    4096 Sep 19 06:01 pcmcia
+drwxr-xr-x  2 root root    4096 Sep 19 15:54 php.d
+-rw-r--r--  1 root root   45081 Jun 27 09:29 php.ini
+-rw-r--r--  1 root root   14062 Apr 29  2006 pine.conf
+-rw-r--r--  1 root root    2875 Jan  6  2007 pinforc
+drwxr-xr-x  7 root root    4096 Sep 19 05:56 pki
+drwxr-xr-x  5 root root    4096 Sep 19 06:02 pm
+drwxr-xr-x  3 root root    4096 Sep 19 14:58 ppp
+-rw-r--r--  1 root root  599120 Nov 29 04:03 prelink.cache
+-rw-r--r--  1 root root     973 Sep 18  2008 prelink.conf
+drwxr-xr-x  2 root root    4096 Jan 20  2009 prelink.conf.d
+-rw-r--r--  1 root root     1--r--  1 root root    2875 Jan  6  2007 pinforc
+drwxr-xr-x  7 root root    4096 Sep 19 05:56 pki
+drwxr-xr-x  5 root root    4096 Sep 19 06:02 pm
+drwxr-xr-x  3 root root    409635 Oct 28 11:55 printcap
+-rw-r--r--  1 root root    1344 Feb 22  2012 profile
+drwxr-xr-x  2 root root    4096 Nov 28 17:40 profile.d
+-rw-r--r--  1 root root    6108 Oct 11  2006 protocols
+drwxr-xr-x  2 root root    4096 Sep 19 15:02 purple
+-rw-r--r--  1 root root     220 May  4  2011 quotagrpadmins
+-rw-r--r--  1 root root     290 May  4  2011 quotatab
+drwxr-xr-x  3 root root    4096 Sep 19 15:00 racoon
+lrwxrwxrwx  1 root root       7 Sep 19 14:58 rc -> rc.d/rc
+lrwxrwxrwx  1 root root      10 Sep 19 14:58 rc0.d -> rc.d/rc0.d
+lrwxrwxrwx  1 root root      10 Sep 19 14:58 rc1.d -> rc.d/rc1.d
+lrwxrwxrwx  1 root root      10 Sep 19 14:58 rc2.d -> rc.d/rc2.d
+lrwxrwxrwx  1 root root      10 Sep 19 14:58 rc3.d -> rc.d/rc3.d
+lrwxrwxrwx  1 root root      10 Sep 19 14:58 rc4.d -> rc.d/rc4.d
+lrwxrwxrwx  1 root root      10 Sep 19 14:58 rc5.d -> rc.d/rc5.d
+lrwxrwxrwx  1 root root      10 Sep 19 14:58 rc6.d -> rc.d/rc6.d
+drwxr-xr-x 10 root root    4096 Sep 19 14:58 rc.d
+lrwxrwxrwx  1 root root      13 Sep 19 14:58 rc.local 10 Sep 19 14:58 rc2.d -> rc.d/rc2.d
+lrwxrwxrwx  1 root root      10 Sep 19 14:58 rc3.d -> rc.d/rc3.d
+lrwxrwxrwx  1 root root      10 Sep 19 14:58 rc4.d -> rc.d/rc4.d
+lrwxrwxrwx-> rc.d/rc.local
+lrwxrwxrwx  1 root root      15 Sep 19 14:58 rc.sysinit -> rc.d/rc.sysinit
+drwxr-xr-x  2 root root    4096 Sep 19 05:58 readahead.d
+-rw-r--r--  1 root root     435 Oct 28 11:55 reader.conf
+drwxr-xr-x  2 root root    4096 Sep 19 05:57 reader.conf.d
+drwxr-xr-x  2 root root    4096 Sep 19 05:59 redhat-lsb
+-rw-r--r--  1 root root      27 Feb 25  2012 redhat-release
+-rw-r--r--  1 root root    1484 Jan  5  2007 request-key.conf
+-rw-r--r--  1 root root      69 Sep 20 12:19 resolv.conf
+drwxr-xr-x  3 root root    4096 Sep 19 05:58 rhgb
+lrwxrwxrwx  1 root root      11 Sep 19 05:53 rmt -> ../sbin/rmt
+-rw-r--r--  1 root root    1615 Aug 30  2001 rpc
+drwxr-xr-x  2 root root    4096 Oct 10 17:17 rpm
+-rw-r--r--  1 root root    1256 Dec  7  2010 rsyslog.conf
+-rw-r--r--  1 root root     754 Aug  9 07:06 rwtab
+drwxr-xr-x  2 root root    4096 Aug  9 07:06 rwtab.d
+drwxr-xr-x  2 root root    4096 Sep 19 14:59 samba
+drwxr-xr-x  2 root root    4096 Sep 19 06:02 sane.d
+drwxr-xr-x  2 root root    4096 Sep  3 06:56 sa  1 root root    1615 Aug 30  2001 rpc
+drwxr-xr-x  2 root root    4096 Oct 10 17:17 rpm
+-rw-r--r--  1 root root    1256 Dec  7  2010 rsyslog.conf
+-rw-r--r--  1 root root     75sl2
+-rw-r--r--  1 root root    6972 May  4  2011 screenrc
+-rw-r--r--  1 root root     103 Mar 14  2007 scrollkeeper.conf
+-rw-r--r--  1 root root     666 Nov 14  2011 scsi_id.config
+-rw-------  1 root root     122 Feb 17  2003 securetty
+drwxr-xr-x  5 root root    4096 Oct  3 18:41 security
+drwxr-xr-x  3 root root    4096 Sep 19 07:42 selinux
+-rw-r--r--  1 root root   85179 Mar 30  2010 sensors.conf
+drwxr-xr-x  2 root root    4096 Oct  3 18:41 server_scripts
+-rw-r--r--  1 root root  362031 Feb 23  2006 services
+-rw-r--r--  1 root root     216 Apr  2  2010 sestatus.conf
+drwxr-xr-x  2 root root    4096 Sep 19 15:02 setroubleshoot
+drwxr-xr-x  2 root root    4096 Sep 19 05:58 setuptool.d
+drwxr-xr-x  2 root root    4096 Sep 19 05:56 sgml
+-r--------  1 root root    1145 Sep 19 16:17 shadow
+-r--------  1 root root    1120 Sep 19 15:56 shadow-
+-rw-r--r--  1 root root      69 Sep 19 05:56 shells
+drwxr-xr-x  5 root root    4096 Sep 19 16:18 skel
+-rw-r--r--  1 root root   21851 Jan  6  2007 slrn.rc
+drwxr-xr-x  3 root rootubleshoot
+drwxr-xr-x  2 root root    4096 Sep 19 05:58 setuptool.d
+drwxr-xr-x  2 root root    4096 Sep 19 05:56 sgml
+-r--------  1 root root    1145 Sep 19 16:17 shadow
+-r-----    4096 Sep 19 07:48 smart
+-rw-r--r--  1 root root    6463 Feb 23  2012 smartd.conf
+-rw-r--r--  1 root root    1272 Jan  4  2008 smi.conf
+drwxr-xr-x  2 root root    4096 Aug 11  2011 smrsh
+drwxr-xr-x  3 root root    4096 Mar 14  2007 sound
+drwxr-xr-x  2 root root    4096 Mar  8  2012 ssh
+drwxr-xr-x  2 root root    4096 Sep 19 07:18 ssh.bak
+drwxr-xr-x  2 root root    4096 Mar 11  2009 stunnel
+drwxr-xr-x  2 root root    4096 May 14  2012 subversion
+-r--r-----  1 root root    3381 Sep 17 03:28 sudoers
+drwxr-xr-x 10 root root    4096 Nov 14 18:15 sysconfig
+-rw-r--r--  1 root root     996 Aug  9 07:06 sysctl.conf
+-rw-r--r--  1 root root     715 Oct  5 23:32 syslog.conf
+-rw-------  1 root root    6411 May 24  2008 tcsd.conf
+-rw-r--r--  1 root root  807103 Jan  6  2007 termcap
+-rw-r--r--  1 root root    8818 Jul 27  2007 timidity.cfg
+-rw-r--r--  1 root root    2643 Jan  6  2007 tux.mime.types
+drwxr-xr-x  5 root root    4096 Sep 19 05:58 udev
+-rw-r--r--  1 root root     136 Sep  3  2009 updatedb.conf
+-rw-r--r--  1 rr--  1 root root     715 Oct  5 23:32 syslog.conf
+-rw-------  1 root root    6411 May 24  2008 tcsd.conf
+-rw-r--r--  1 root root  807103 Jan  6  2007 termcap
+-rw-r--r--  1 rootoot root    1533 Mar  5  2011 vimrc
+-rw-r--r--  1 root root    1533 Mar  5  2011 virc
+drwxr-xr-x  2 root root    4096 Sep 19 05:56 w3m
+-rw-r--r--  1 root root    2657 May  4  2011 warnquota.conf
+-rw-r--r--  1 root root   23735 Jan  8  2007 webalizer.conf
+-rw-r--r--  1 root root    4204 May 10  2012 wgetrc
+drwxr-xr-x  2 root root    4096 Sep 19 05:56 wpa_supplicant
+-rw-r--r--  1 root root       0 Jan  9  2007 wvdial.conf
+drwxr-xr-x  9 root root    4096 Oct  4 10:18 X11
+drwxr-xr-x  4 root root    4096 Sep 19 05:58 xdg
+-rw-r--r--  1 root root    1001 Feb 22  2012 xinetd.conf
+drwxr-xr-x  2 root root    4096 Oct 26 17:30 xinetd.d
+drwxr-xr-x  2 root root    4096 Sep 19 05:56 xml
+-rw-r--r--  1 root root      76 Sep 20 11:51 yp.conf
+drwxr-xr-x  3 root root    4096 Sep 19 06:01 yum
+-rw-r--r--  1 root root     399 Oct 10 17:18 yum.conf
+drwxr-xr-x  2 root root    4096 Oct  9 18:22 yum.repos.d
+-rw-r--r--  1 root root     252 Feb 22  2012 zlogin
+-rw-r--r--  1 root root      86 Feb 22  2012 zlogout
+-rw-r--r--  1 root root     168 Feb 22  2012 zprofile
+-rw-r--r--  1 root root     304 Feb 22  2012 zshenv
+-rw-r--r--  1 root root     640 Feb 22  2012 zshrc
+t    4096 Sep 19 06:01 yum
+-rw-r--r--  1 ro
+done reading
+~/cs100/hw/hw8
+svill017@well $ exit
+exit
+
+Script done on Fri 30 Nov 2012 01:22:21 AM PST
+Script started on Fri 30 Nov 2012 01:23:03 AM PST
+~
+svill017@well $ ls
+[0m[01;34mcs010[0m/  [01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mex3.asm[0m*                [01;34msummer[0m/     [01;34mWINDOWS[0m/
+[01;34mcs012[0m/  [01;34mcs100[0m/  [01;34mDesktop[0m/  [01;32mFirefox_wallpaper.png[0m*  [0mtypescript[0m  [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hw8
+~/cs100/hw/hw8
+svill017@well $ ls
+[0m[01;32mcclient[0m*     [01;32mcserver[0m*     [01;32miclient[0m*     [01;32miserver[0m*      [01;32mMakefile[0m*      [0mtypescript[0m
+[0mcclient.cpp[0m  [0mcserver.cpp[0m  [0miclient.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[m~/cs100/hw/hw8
+svill017@well $ cserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ cserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ cserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ cclient #[K$HOSTNAME /etc/gshawd[K[Kdow [K
+/etc/gshadow
+the remote host is well.cs.ucr.edu
+done reading
+~/cs100/hw/hw8
+svill017@well $ exit
+exit
+
+Script done on Fri 30 Nov 2012 01:24:27 AM PST
+Script started on Fri 30 Nov 2012 01:26:01 AM PST
+ls
+~
+svill017@well $ ls
+[0m[01;34mcs010[0m/  [01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mex3.asm[0m*                [01;34msummer[0m/     [01;34mWINDOWS[0m/
+[01;34mcs012[0m/  [01;34mcs100[0m/  [01;34mDesktop[0m/  [01;32mFirefox_wallpaper.png[0m*  [0mtypescript[0m  [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hw8
+~/cs100/hw/hw8
+svill017@well $ ls
+[0m[01;32mcclient[0m*     [01;32mcserver[0m*     [01;32miclient[0m*     [01;32miserver[0m*      [01;32mMakefile[0m*      [0mtypescript[0m
+[0mcclient.cpp[0m  [0mcserver.cpp[0m  [0miclient.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[m~/cs100/hw/hw8
+svill017@well $ ls
+[0m[01;32mcclient[0m*     [01;32mcserver[0m*     [01;32miclient[0m*     [01;32miserver[0m*      [01;32mMakefile[0m*      [0mtypescript[0m
+[0mcclient.cpp[0m  [0mcserver.cpp[0m  [0miclient.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[m~/cs100/hw/hw8
+svill017@well $ cserver 
+CSERVER is UP and READY !
+/bin/gshadowsrc : No such file or directory
+/bin/gshadow~/cs100/hw/hw8
+svill017@well $ cserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ cserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ cserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ cserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ gvim [K[K[K[K[Kcserver ls[Kcserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ cserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ gvim cserver.cpp 
+~/cs100/hw/hw8
+svill017@well $ make clean
+rm iclient iserver cserver cclient
+~/cs100/hw/hw8
+svill017@well $ ls
+[0m[0mcclient.cpp[0m  [0miclient.cpp[0m   [01;32mMakefile[0m*      [0mtypescript[0m
+[0mcserver.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[m~/cs100/hw/hw8
+svill017@well $ make
+g++ -ggdb iclient.cpp -o iclient
+g++ -ggdb iserver.cpp -o iserver
+g++ -ggdb cserver.cpp -o cserver
+g++ -ggdb cclient.cpp -o cclient
+~/cs100/hw/hw8
+svill017@well $ ls
+[0m[01;32mcclient[0m*     [01;32mcserver[0m*     [01;32miclient[0m*     [01;32miserver[0m*      [01;32mMakefile[0m*      [0mtypescript[0m
+[0mcclient.cpp[0m  [0mcserver.cpp[0m  [0miclient.cpp[0m  [01;32miserver.cpp[0m*  [01;32mtiserver.cpp[0m*
+[m~/cs100/hw/hw8
+svill017@well $ c[Kcserver 
+CSERVER is UP and READY !
+/etc/gshawdowsrc : No such file or directory
+/etc/gshawdow~/cs100/hw/hw8
+svill017@well $ cserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ cserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ echo keep making typos is[Kts supposed to be gshadow...
+keep making typos its supposed to be gshadow...
+~/cs100/hw/hw8
+svill017@well $ echo keep making typos its supposed to be gshadow...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccserver [K
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ cserver 
+bind !: Address already in use
+~/cs100/hw/hw8
+svill017@well $ cserver echo keep making typos its supposed to be gshadow...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccserver [Kls[Kmake[2Plsmake cleangvim cserver.cpp [9Pcserver[Cls[Kcserver [9@gvim cserver.cpp[C
+~/cs100/hw/hw8
+svill017@well $ make
+g++ -ggdb iclient.cpp -o iclient
+g++ -ggdb iserver.cpp -o iserver
+g++ -ggdb cserver.cpp -o cserver
+g++ -ggdb cclient.cpp -o cclient
+~/cs100/hw/hw8
+svill017@well $ makegvim cserver.cpp [9Pcserver[C
+CSERVER is UP and READY !
+/etc/gshadowsrc : Permission denied
+/etc/gshadow~/cs100/hw/hw8
+svill017@well $ echo so this is what happens when i try to get[K[K[Ksend a file s[Knot sure  if its because of the firewall or because the method i chose too use which was u sing a [K[Kthe sendfile[K[K[K[K[K[K[K[K[K sys/sendfil.h[K[Ke.h 
+so this is what happens when i try to send a file not sure if its because of the firewall or because the method i chose too use which was using the sys/sendfile.h
+~/cs100/hw/hw8
+svill017@well $ echo so this is what happens when i try to send a file not sure iif its because of the firewall or because the method i chose too use which was ussing the sys/sendfile.h [A[Acserver [K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+CSERVER is UP and READY !
+/etcsendfile() : Invalid argument
+/etc~/cs100/hw/hw8
+svill017@well $ echo i know it does[K[K[Kd[K[K[K[K[K[K[K[K[K[K[K[K[K doesn't work on direcotrys [K[K[K[K[K[K[K[K[Krectories af[Ks af[K[Kfar as i was able to test it [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+loop $ exit
+loop $ ls[K[K^C
+~/cs100/hw/hw8
+svill017@well $ exit
+exit
+
+Script done on Fri 30 Nov 2012 01:32:54 AM PST

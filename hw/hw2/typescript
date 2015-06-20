@@ -1,0 +1,226 @@
+Script started on Wed 17 Oct 2012 11:52:18 PM PDT
+~
+svill017@well $ ls
+[0m[01;34mcs010[0m/  [01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mFirefox_wallpaper.png[0m*  [01;34mWINDOWS[0m/
+[01;34mcs012[0m/  [01;34mcs100[0m/  [01;34mDesktop[0m/  [01;34msummer[0m/                 [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hw2
+~/cs100/hw/hw2
+svill017@well $ ls
+[0m[0mbestMain.cc[0m    [0mCoins.cc[0m  [0mCoins.o[0m  [0mmain.o[0m    [0mmy_ls.cc[0m
+[0mbetterMain.cc[0m  [0mCoins.h[0m   [0mmain.cc[0m  [0mMakefile[0m  [0mtypescript[0m
+[m~/cs100/hw/hw2
+svill017@well $ gvim Makefile &
+[1] 15664
+~/cs100/hw/hw2
+svill017@well $ ls
+[0m[0mbestMain.cc[0m    [0mCoins.cc[0m  [0mCoins.o[0m  [0mmain.o[0m    [0mmy_ls.cc[0m
+[0mbetterMain.cc[0m  [0mCoins.h[0m   [0mmain.cc[0m  [0mMakefile[0m  [0mtypescript[0m
+[m[1]+  Done                    gvim Makefile
+~/cs100/hw/hw2
+svill017@well $ make main
+touch main.o
+g++  main.o Coins.o -o main
+~/cs100/hw/hw2
+svill017@well $ ls
+[0m[0mbestMain.cc[0m    [0mCoins.cc[0m  [0mCoins.o[0m  [0mmain.cc[0m  [0mMakefile[0m  [0mtypescript[0m
+[0mbetterMain.cc[0m  [0mCoins.h[0m   [01;32mmain[0m*    [0mmain.o[0m   [0mmy_ls.cc[0m
+[m~/cs100/hw/hw2
+svill017@well $ main
+I started with Q: 100 D: 10 N: 10 P: 100
+ in my pocket
+I bought a candy bar for 482 cents using Q: 19 D: 0 N: 1 P: 2
+
+I have Q: 81 D: 10 N: 9 P: 98
+ left in my pocket
+~/cs100/hw/hw2
+svill017@well $ make better
+g++  -c betterMain.cc  
+touch betterMain.o
+g++  betterMain.o Coins.o -o better
+~/cs100/hw/hw2
+svill017@well $ ls
+[0m[0mbestMain.cc[0m  [0mbetterMain.cc[0m  [0mCoins.cc[0m  [0mCoins.o[0m  [0mmain.cc[0m  [0mMakefile[0m  [0mtypescript[0m
+[01;32mbetter[0m*      [0mbetterMain.o[0m   [0mCoins.h[0m   [01;32mmain[0m*    [0mmain.o[0m   [0mmy_ls.cc[0m
+[m~/cs100/hw/hw2
+svill017@well $ better
+pocket has: Q: 5 D: 6 N: 3 P: 8
+
+piggyBank has: Q: 50 D: 50 N: 50 P: 50
+
+buy chips for 68cents forcents using Q: 2 D: 1 N: 1 P: 3
+
+ I have Q: 3 D: 5 N: 2 P: 5
+ left in my pocket 
+withdrawing from bank the amount of 877 i got Q: 35 D: 0 N: 0 P: 2
+ from the bank
+in my pocket i have Q: 38 D: 5 N: 2 P: 7
+
+in the bank there is Q: 15 D: 50 N: 50 P: 48
+
+while vacuuming you i found Q: 10 D: 3 N: 5 P: 1
+
+i place them in my bank
+bank now has Q: 25 D: 53 N: 55 P: 49
+
+~/cs100/hw/hw2
+svill017@well $ ls
+[0m[0mbestMain.cc[0m  [0mbetterMain.cc[0m  [0mCoins.cc[0m  [0mCoins.o[0m  [0mmain.cc[0m  [0mMakefile[0m  [0mtypescript[0m
+[01;32mbetter[0m*      [0mbetterMain.o[0m   [0mCoins.h[0m   [01;32mmain[0m*    [0mmain.o[0m   [0mmy_ls.cc[0m
+[m~/cs100/hw/hw2
+svill017@well $ make best
+g++  -c bestMain.cc
+touch bestMain.o 
+g++  bestMain.o Coins.o -o best
+~/cs100/hw/hw2
+svill017@well $ ls
+[0m[01;32mbest[0m*        [01;32mbetter[0m*        [0mCoins.cc[0m  [01;32mmain[0m*    [0mMakefile[0m
+[0mbestMain.cc[0m  [0mbetterMain.cc[0m  [0mCoins.h[0m   [0mmain.cc[0m  [0mmy_ls.cc[0m
+[0mbestMain.o[0m   [0mbetterMain.o[0m   [0mCoins.o[0m   [0mmain.o[0m   [0mtypescript[0m
+[m~/cs100/hw/hw2
+svill017@well $ best
+Welcome to myCoin management
+commands are d:deposit e:extract p:print q:quit
+e p
+Q: 0 D: 0 N: 0 P: 0
+
+commands are d:deposit e:extract p:print q:quit
+e
+enter amount wanted amount
+123
+not enough money
+commands are d:deposit e:extract p:print q:quit
+p
+Q: 0 D: 0 N: 0 P: 0
+
+commands are d:deposit e:extract p:print q:quit
+d
+give num of quarters,dimes,nickels, and pennies
+1 2 34  4
+commands are d:deposit e:extract p:print q:quit
+p
+Q: 1 D: 2 N: 3 P: 4
+
+commands are d:deposit e:extract p:print q:quit
+e
+enter amount wanted amount
+28
+commands are d:deposit e:extract p:print q:quit
+p
+Q: 0 D: 2 N: 3 P: 1
+
+commands are d:deposit e:extract p:print q:quit
+e
+enter amount wanted amount
+1000
+not enough money
+commands are d:deposit e:extract p:print q:quit
+p
+Q: 0 D: 2 N: 3 P: 1
+
+commands are d:deposit e:extract p:print q:quit
+q
+~/cs100/hw/hw2
+svill017@well $ ls
+[0m[01;32mbest[0m*        [01;32mbetter[0m*        [0mCoins.cc[0m  [01;32mmain[0m*    [0mMakefile[0m
+[0mbestMain.cc[0m  [0mbetterMain.cc[0m  [0mCoins.h[0m   [0mmain.cc[0m  [0mmy_ls.cc[0m
+[0mbestMain.o[0m   [0mbetterMain.o[0m   [0mCoins.o[0m   [0mmain.o[0m   [0mtypescript[0m
+[m~/cs100/hw/hw2
+svill017@well $ make my_ls
+g++  my_ls.cc -o myls
+~/cs100/hw/hw2
+svill017@well $ ls
+[0m[01;32mbest[0m*        [01;32mbetter[0m*        [0mCoins.cc[0m  [01;32mmain[0m*    [0mMakefile[0m  [0mtypescript[0m
+[0mbestMain.cc[0m  [0mbetterMain.cc[0m  [0mCoins.h[0m   [0mmain.cc[0m  [01;32mmyls[0m*
+[0mbestMain.o[0m   [0mbetterMain.o[0m   [0mCoins.o[0m   [0mmain.o[0m   [0mmy_ls.cc[0m
+[m~/cs100/hw/hw2
+svill017@well $ myls
+.
+    ..
+    .bestMain.cc.swp  33152 1 12288 1350465828
+    .betterMain.cc.swp  33152 1 12288 1350463664
+    .Coins.cc.swp  33152 1 12288 1350463714
+    .Coins.h.swp  33152 1 12288 1350460258
+    .main.cc.swp  33152 1 12288 1350462403
+    best  33216 1 11742 1350543203
+    bestMain.cc  33152 1 687 1350465797
+    bestMain.o  33152 1 4232 1350543202
+    better  33216 1 11681 1350543181
+    betterMain.cc  33152 1 949 1350463636
+    betterMain.o  33152 1 5552 1350543181
+    Coins.cc  33152 1 1364 1350463701
+    Coins.h  33152 1 517 1350460226
+    Coins.o  33152 1 5016 1350543088
+    main  33216 1 11099 1350543167
+    main.cc  33152 1 588 1350459007
+    main.o  33152 1 3864 1350543167
+    Makefile  33152 1 816 1350468721
+    my_ls.cc  33152 1 1342 1350542922
+    typescript  33152 1 0 1350543137
+    myls  33216 1 11273 1350543279
+~/cs100/hw/hw2
+svill017@well $ myls ../
+../
+    ..
+    hw1
+    hw2
+~/cs100/hw/hw2
+svill017@well $ myls../[K[K[K ../../
+../../
+    ..
+    hw
+    lab
+~/cs100/hw/hw2
+svill017@well $ myls ../hw2
+../hw2
+    ..
+    .bestMain.cc.swp  33152 1 12288 1350465828
+    .betterMain.cc.swp  33152 1 12288 1350463664
+    .Coins.cc.swp  33152 1 12288 1350463714
+    .Coins.h.swp  33152 1 12288 1350460258
+    .main.cc.swp  33152 1 12288 1350462403
+    best  33216 1 11742 1350543203
+    bestMain.cc  33152 1 687 1350465797
+    bestMain.o  33152 1 4232 1350543202
+    better  33216 1 11681 1350543181
+    betterMain.cc  33152 1 949 1350463636
+    betterMain.o  33152 1 5552 1350543181
+    Coins.cc  33152 1 1364 1350463701
+    Coins.h  33152 1 517 1350460226
+    Coins.o  33152 1 5016 1350543088
+    main  33216 1 11099 1350543167
+    main.cc  33152 1 588 1350459007
+    main.o  33152 1 3864 1350543167
+    Makefile  33152 1 816 1350468721
+    my_ls.cc  33152 1 1342 1350542922
+    typescript  33152 1 0 1350543137
+    myls  33216 1 11273 1350543279
+~/cs100/hw/hw2
+svill017@well $ myls ../../
+../../
+    ..
+    hw
+    lab
+~/cs100/hw/hw2
+svill017@well $ myls ../../lab
+../../lab
+    ..
+    lab1
+    lab2
+    lab3
+~/cs100/hw/hw2
+svill017@well $ ls
+[0m[01;32mbest[0m*        [01;32mbetter[0m*        [0mCoins.cc[0m  [01;32mmain[0m*    [0mMakefile[0m  [0mtypescript[0m
+[0mbestMain.cc[0m  [0mbetterMain.cc[0m  [0mCoins.h[0m   [0mmain.cc[0m  [01;32mmyls[0m*
+[0mbestMain.o[0m   [0mbetterMain.o[0m   [0mCoins.o[0m   [0mmain.o[0m   [0mmy_ls.cc[0m
+[m~/cs100/hw/hw2
+svill017@well $ make clean
+rm *.o
+~/cs100/hw/hw2
+svill017@well $ ls
+[0m[01;32mbest[0m*        [01;32mbetter[0m*        [0mCoins.cc[0m  [01;32mmain[0m*    [0mMakefile[0m  [0mmy_ls.cc[0m
+[0mbestMain.cc[0m  [0mbetterMain.cc[0m  [0mCoins.h[0m   [0mmain.cc[0m  [01;32mmyls[0m*     [0mtypescript[0m
+[m~/cs100/hw/hw2
+svill017@well $ exit
+
+Script done on Wed 17 Oct 2012 11:56:05 PM PDT

@@ -1,0 +1,29 @@
+#!/bin/bash
+CDIR=$1
+shift
+while [ "$1" != "" ]
+do
+case $1 in
+	-name )	shift
+		name=$1
+		shift
+		;;
+	-type ) shift
+		typef=$1
+		shift
+		;;
+	-print ) 
+		if [ -$typef $CDIR\/$name ]
+		then echo found $CDIR\/$name
+		fi
+		shift
+		;;
+	-exec ) shift
+		var=$(echo $* | sed s:\{\}:$CDIR\/$name:)
+		$var
+		exit
+		;;
+	* )	exit 1
+esac
+		
+done

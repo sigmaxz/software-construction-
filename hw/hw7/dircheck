@@ -1,0 +1,22 @@
+#!/bin/bash
+# prints num of subdir , count of files in dir, list all zero length files
+# the use du to print storage space
+
+var=0
+for f in $*
+do
+	vart=`ls -R | grep ..: | wc -l`
+	echo number of directories: $vart
+	temp=`ls`
+	for s in ${temp[*]}
+	do
+		if [[ -f $s ]]
+		then var=`expr $var + 1`
+		fi
+	done
+	echo number of files in working directory: $var
+	echo list of zero lenth files:
+	find $f -type f -size 0 
+	echo space used:
+	du $f | tail -1
+done

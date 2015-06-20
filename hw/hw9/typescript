@@ -1,0 +1,537 @@
+Script started on Fri 07 Dec 2012 12:23:51 AM PST
+~
+svill017@well $ ls
+[0m[01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mex3.asm[0m*                [01;34msummer[0m/     [01;34mWINDOWS[0m/
+[01;34mcs100[0m/  [01;34mDesktop[0m/  [01;32mFirefox_wallpaper.png[0m*  [0mtypescript[0m  [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hw9
+~/cs100/hw/hw9
+svill017@well $ ls
+[0m[0mclient.cpp[0m     [0mflserver.cpp[0m  [0mperserver.cpp[0m   [0mserver.cpp[0m  [0mtypescript[0m
+[01;32mcompareFiles[0m*  [0mMakefile[0m      [0mpoolserver.cpp[0m  [0mTimer.h[0m
+[m~/cs100/hw/hw9
+svill017@well $ make
+g++ client.cpp -lpthread -o client
+g++ server.cpp -lpthread -o server
+g++ perserver.cpp -lpthread -o perserver
+g++ poolserver.cpp -lpthread -o poolserver
+g++ flserver.cpp -lpthread -o flserver
+~/cs100/hw/hw9
+svill017@well $ ls
+[0m[01;32mclient[0m*        [01;32mflserver[0m*     [01;32mperserver[0m*     [0mpoolserver.cpp[0m  [0mTimer.h[0m
+[0mclient.cpp[0m     [0mflserver.cpp[0m  [0mperserver.cpp[0m  [01;32mserver[0m*         [0mtypescript[0m
+[01;32mcompareFiles[0m*  [0mMakefile[0m      [01;32mpoolserver[0m*    [0mserver.cpp[0m
+[m~/cs100/hw/hw9
+svill017@well $ echo hi lucy first i'm going to run the client with normal serve r
+loop $ bash: unexpected EOF while looking for matching `''
+bash: syntax error: unexpected end of file
+~/cs100/hw/hw9
+svill017@well $ echo ok that was werid
+ok that was werid
+~/cs100/hw/hw9
+svill017@well $ echo nor[K[K[K10 threaded client with normal server
+10 threaded client with normal server
+~/cs100/hw/hw9
+svill017@well $ s[Kclient $HOSTNAME 1551
+time : 13.2824
+~/cs100/hw/hw9
+svill017@well $ echo there seems to bee connect t[K[Kion issues laggy internet let
+there seems to bee connection issues laggy internet let
+~/cs100/hw/hw9
+svill017@well $ echo te[K[K[K met [K[K[Ke run it a 2nd time 
+me run it a 2nd time
+~/cs100/hw/hw9
+svill017@well $ echo me run it a 2nd time there seems to bee connection issues laggy internet let[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[39Pclient $HOSTNAME 1551[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho 10 threaded client with normal server[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pclient $HOSTNAME 1551
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 1551
+connect refused: Connection refused
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ make cle[K[K[K[K[K[K[K[Kmake clean
+rm -R Thread* 
+rm client server poolserver perserver flserver
+~/cs100/hw/hw9
+svill017@well $ make 
+g++ client.cpp -lpthread -o client
+g++ server.cpp -lpthread -o server
+g++ perserver.cpp -lpthread -o perserver
+g++ poolserver.cpp -lpthread -o poolserver
+g++ flserver.cpp -lpthread -o flserver
+~/cs100/hw/hw9
+svill017@well $ make cleanclient $HOSTNAME 1551
+time : 1.79858
+~/cs100/hw/hw9
+svill017@well $ ls
+[0m[01;32mclient[0m*        [0mflserver.cpp[0m   [01;32mpoolserver[0m*     [01;34mThread_0[0m/  [01;34mThread_4[0m/  [01;34mThread_8[0m/
+[0mclient.cpp[0m     [0mMakefile[0m       [0mpoolserver.cpp[0m  [01;34mThread_1[0m/  [01;34mThread_5[0m/  [01;34mThread_9[0m/
+[01;32mcompareFiles[0m*  [01;32mperserver[0m*     [01;32mserver[0m*         [01;34mThread_2[0m/  [01;34mThread_6[0m/  [0mTimer.h[0m
+[01;32mflserver[0m*      [0mperserver.cpp[0m  [0mserver.cpp[0m      [01;34mThread_3[0m/  [01;34mThread_7[0m/  [0mtypescript[0m
+[m~/cs100/hw/hw9
+svill017@well $ echo now testing my shell script
+now testing my shell script
+~/cs100/hw/hw9
+svill017@well $ compare [KFiles 
+~/cs100/hw/hw9
+svill017@well $ echo now ill modify one to see if i appears
+now ill modify one to see if i appears
+~/cs100/hw/hw9
+svill017@well $ cd Thread_0
+~/cs100/hw/hw9/Thread_0
+svill017@well $ ls
+[0m[0massert.h[0m  [0merrno.h[0m  [0mmath.h[0m    [0mncurses.h[0m  [0msetjmp.h[0m  [0mstrings.h[0m
+[0mctype.h[0m   [0mfstab.h[0m  [0mmemory.h[0m  [0mpthread.h[0m  [0mstdlib.h[0m  [0mwords[0m
+[m~/cs100/hw/hw9/Thread_0
+svill017@well $ cd[K[Kgvim words
+~/cs100/hw/hw9/Thread_0
+svill017@well $ ls
+cd -
+[0m[0massert.h[0m  [0merrno.h[0m  [0mmath.h[0m    [0mncurses.h[0m  [0msetjmp.h[0m  [0mstrings.h[0m
+[0mctype.h[0m   [0mfstab.h[0m  [0mmemory.h[0m  [0mpthread.h[0m  [0mstdlib.h[0m  [0mwords[0m
+[m~/cs100/hw/hw9/Thread_0
+svill017@well $ cd -
+/home/csmajs/svill017/cs100/hw/hw9
+~/cs100/hw/hw9
+svill017@well $ ls
+[0m[01;32mclient[0m*        [0mflserver.cpp[0m   [01;32mpoolserver[0m*     [01;34mThread_0[0m/  [01;34mThread_4[0m/  [01;34mThread_8[0m/
+[0mclient.cpp[0m     [0mMakefile[0m       [0mpoolserver.cpp[0m  [01;34mThread_1[0m/  [01;34mThread_5[0m/  [01;34mThread_9[0m/
+[01;32mcompareFiles[0m*  [01;32mperserver[0m*     [01;32mserver[0m*         [01;34mThread_2[0m/  [01;34mThread_6[0m/  [0mTimer.h[0m
+[01;32mflserver[0m*      [0mperserver.cpp[0m  [0mserver.cpp[0m      [01;34mThread_3[0m/  [01;34mThread_7[0m/  [0mtypescript[0m
+[m~/cs100/hw/hw9
+svill017@well $ compareFiles 
+1c1
+< 1080
+---
+> 1a080
+~/cs100/hw/hw9
+svill017@well $ echo so i justa[K added an a and it found it[K[Ka difference so it words[K[Kks
+so i just added an a and it found a difference so it works
+~/cs100/hw/hw9
+svill017@well $ ill add [K[K[K[K[K[K[K[Kecho ill add another difference in Thread6 a b[K[K[Ka 'b'
+ill add another difference in Thread6 a b
+~/cs100/hw/hw9
+svill017@well $ cd Thread_0[K6
+~/cs100/hw/hw9/Thread_6
+svill017@well $ ls
+[0m[0massert.h[0m  [0merrno.h[0m  [0mmath.h[0m    [0mncurses.h[0m  [0msetjmp.h[0m  [0mstrings.h[0m
+[0mctype.h[0m   [0mfstab.h[0m  [0mmemory.h[0m  [0mpthread.h[0m  [0mstdlib.h[0m  [0mwords[0m
+[m~/cs100/hw/hw9/Thread_6
+svill017@well $ gvim ctype.h 
+~/cs100/hw/hw9/Thread_6
+svill017@well $ ls
+[0m[0massert.h[0m  [0merrno.h[0m  [0mmath.h[0m    [0mncurses.h[0m  [0msetjmp.h[0m  [0mstrings.h[0m
+[0mctype.h[0m   [0mfstab.h[0m  [0mmemory.h[0m  [0mpthread.h[0m  [0mstdlib.h[0m  [0mwords[0m
+[m~/cs100/hw/hw9/Thread_6
+svill017@well $ cd -
+/home/csmajs/svill017/cs100/hw/hw9
+~/cs100/hw/hw9
+svill017@well $ ls
+[0m[01;32mclient[0m*        [0mflserver.cpp[0m   [01;32mpoolserver[0m*     [01;34mThread_0[0m/  [01;34mThread_4[0m/  [01;34mThread_8[0m/
+[0mclient.cpp[0m     [0mMakefile[0m       [0mpoolserver.cpp[0m  [01;34mThread_1[0m/  [01;34mThread_5[0m/  [01;34mThread_9[0m/
+[01;32mcompareFiles[0m*  [01;32mperserver[0m*     [01;32mserver[0m*         [01;34mThread_2[0m/  [01;34mThread_6[0m/  [0mTimer.h[0m
+[01;32mflserver[0m*      [0mperserver.cpp[0m  [0mserver.cpp[0m      [01;34mThread_3[0m/  [01;34mThread_7[0m/  [0mtypescript[0m
+[m~/cs100/hw/hw9
+svill017@well $ echo i actually made it say hi lucy :\)
+i actually made it say hi lucy :)
+~/cs100/hw/hw9
+svill017@well $ comparef[KFiles 
+1c1
+< 1080
+---
+> 1a080
+70c70
+<    Instead, the following accessor functions return the address of
+---
+>    Instead, the following accessor functions return the address of hi lucy
+~/cs100/hw/hw9
+svill017@well $ ls
+[0m[01;32mclient[0m*        [0mflserver.cpp[0m   [01;32mpoolserver[0m*     [01;34mThread_0[0m/  [01;34mThread_4[0m/  [01;34mThread_8[0m/
+[0mclient.cpp[0m     [0mMakefile[0m       [0mpoolserver.cpp[0m  [01;34mThread_1[0m/  [01;34mThread_5[0m/  [01;34mThread_9[0m/
+[01;32mcompareFiles[0m*  [01;32mperserver[0m*     [01;32mserver[0m*         [01;34mThread_2[0m/  [01;34mThread_6[0m/  [0mTimer.h[0m
+[01;32mflserver[0m*      [0mperserver.cpp[0m  [0mserver.cpp[0m      [01;34mThread_3[0m/  [01;34mThread_7[0m/  [0mtypescript[0m
+[m~/cs100/hw/hw9
+svill017@well $ make clean
+rm -R Thread* 
+rm client server poolserver perserver flserver
+~/cs100/hw/hw9
+svill017@well $ ls
+[0m[0mclient.cpp[0m     [0mflserver.cpp[0m  [0mperserver.cpp[0m   [0mserver.cpp[0m  [0mtypescript[0m
+[01;32mcompareFiles[0m*  [0mMakefile[0m      [0mpoolserver.cpp[0m  [0mTimer.h[0m
+[m~/cs100/hw/hw9
+svill017@well $ ec[K[Kmake
+g++ client.cpp -lpthread -o client
+g++ server.cpp -lpthread -o server
+g++ perserver.cpp -lpthread -o perserver
+g++ poolserver.cpp -lpthread -o poolserver
+g++ flserver.cpp -lpthread -o flserver
+~/cs100/hw/hw9
+svill017@well $ ls
+[0m[01;32mclient[0m*        [01;32mflserver[0m*     [01;32mperserver[0m*     [0mpoolserver.cpp[0m  [0mTimer.h[0m
+[0mclient.cpp[0m     [0mflserver.cpp[0m  [0mperserver.cpp[0m  [01;32mserver[0m*         [0mtypescript[0m
+[01;32mcompareFiles[0m*  [0mMakefile[0m      [01;32mpoolserver[0m*    [0mserver.cpp[0m
+[m~/cs100/hw/hw9
+svill017@well $ echo ill test out pw[Ker request server now
+ill test out per request server now
+~/cs100/hw/hw9
+svill017@well $ echo ill test out per request server now[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kmake[2Plsmake cleanls[KcompareFiles echo i actually made it say hi lucy :\)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd -[2Plsgvim ctype.h ls[Kcd Thread_6echo ill add another difference in Thread6 a 'b'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cso i just added an a and it found a difference so it works[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CcompareFiles [Kls[Kcd -[2Plsgvim wordsls[Kcd Thread_0echo now ill modify one to see if i appears[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CcompareFiles [Kecho now testing my shell script[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kclient $HOSTNAME 1551[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake [Kclient $HOSTNAME 1551
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ /[Kecho ood [K[K[Kd[K[Ksry internet problems 
+sry internet problems
+~/cs100/hw/hw9
+svill017@well $ echo a[Kheres again
+heres again
+~/cs100/hw/hw9
+svill017@well $ echo heres againsry internet problems [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pclient $HOSTNAME 1551
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 1551
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 1551
+connect refused: Connection refused
+connect refused: Connection refused
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 1551
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 1551
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 1551
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 1551
+connect refused: Connection refused
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ echo il[K'll restart ne[Kx 
+loop $ no
+loop $ bash: unexpected EOF while looking for matching `''
+bash: syntax error: unexpected end of file
+~/cs100/hw/hw9
+svill017@well $ echo ill restart nx
+ill restart nx
+~/cs100/hw/hw9
+svill017@well $ qui[K[K[Kexit
+exit
+
+Script done on Fri 07 Dec 2012 12:34:23 AM PST
+Script started on Fri 07 Dec 2012 12:35:54 AM PST
+~
+svill017@well $ s[Kecho im back here we go again
+im back here we go again
+~
+svill017@well $ client $HOSTNAME 5554
+bash: client: command not found
+~
+svill017@well $ ls
+[0m[01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mex3.asm[0m*                [01;34msummer[0m/     [01;34mWINDOWS[0m/
+[01;34mcs100[0m/  [01;34mDesktop[0m/  [01;32mFirefox_wallpaper.png[0m*  [0mtypescript[0m  [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hw9
+~/cs100/hw/hw9
+svill017@well $ ls
+[0m[01;32mclient[0m*        [01;32mflserver[0m*     [01;32mperserver[0m*     [0mpoolserver.cpp[0m  [0mTimer.h[0m
+[0mclient.cpp[0m     [0mflserver.cpp[0m  [0mperserver.cpp[0m  [01;32mserver[0m*         [0mtypescript[0m
+[01;32mcompareFiles[0m*  [0mMakefile[0m      [01;32mpoolserver[0m*    [0mserver.cpp[0m
+[m~/cs100/hw/hw9
+svill017@well $ lscd cs100/hw/hw9ls[Kclient $HOSTNAME 5554
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 5554[K5
+bash: client: command not found
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 5555
+bash: client: command not found
+~/cs100/hw/hw9
+svill017@well $ ls
+[0m[0mclient.cpp[0m     [0mflserver.cpp[0m  [0mperserver.cpp[0m   [0mserver.cpp[0m  [0mtypescript[0m
+[01;32mcompareFiles[0m*  [0mMakefile[0m      [0mpoolserver.cpp[0m  [0mTimer.h[0m
+[m~/cs100/hw/hw9
+svill017@well $ lsclient $HOSTNAME 5555
+connect refused: Connection refused
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ exit
+exit
+
+Script done on Fri 07 Dec 2012 12:38:38 AM PST
+Script started on Fri 07 Dec 2012 01:11:26 AM PST
+~
+svill017@well $ ls
+[00m[00;34mcs014[00m/  [00;34mcs61[00m/     [00;32mex3.asm[00m*                [00;34msummer[00m/     [00;34mWINDOWS[00m/
+[00;34mcs100[00m/  [00;34mDesktop[00m/  [00;32mFirefox_wallpaper.png[00m*  [00mtypescript[00m  [00;34mz[00m/
+[m~
+svill017@well $ cd cs100h[K/hw/hw9
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00mclient.cpp[00m     [00mflserver.cpp[00m  [00mperserver.cpp[00m   [00mserver.cpp[00m  [00mtypescript[00m
+[00;32mcompareFiles[00m*  [00mMakefile[00m      [00mpoolserver.cpp[00m  [00mTimer.h[00m
+[m~/cs100/hw/hw9
+svill017@well $ echo nx been slow today so[Korry[K[K[K[K[Klets try this again i ddi[K[Kid modify again t oo
+nx been slow today lets try this again i did modify again too
+~/cs100/hw/hw9
+svill017@well $ echo nx been slow today lets try this again i did modify again tooo[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclient $HOSTNAME 3333
+bash: client: command not found
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 3333
+time : 1.46906
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00;32mclient[00m*        [00mflserver.cpp[00m   [00;32mpoolserver[00m*     [00;34mThread_0[00m/  [00;34mThread_4[00m/  [00;34mThread_8[00m/
+[00mclient.cpp[00m     [00mMakefile[00m       [00mpoolserver.cpp[00m  [00;34mThread_1[00m/  [00;34mThread_5[00m/  [00;34mThread_9[00m/
+[00;32mcompareFiles[00m*  [00;32mperserver[00m*     [00;32mserver[00m*         [00;34mThread_2[00m/  [00;34mThread_6[00m/  [00mTimer.h[00m
+[00;32mflserver[00m*      [00mperserver.cpp[00m  [00mserver.cpp[00m      [00;34mThread_3[00m/  [00;34mThread_7[00m/  [00mtypescript[00m
+[m~/cs100/hw/hw9
+svill017@well $ cm[Komparef[KFiles 
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00;32mclient[00m*        [00mflserver.cpp[00m   [00;32mpoolserver[00m*     [00;34mThread_0[00m/  [00;34mThread_4[00m/  [00;34mThread_8[00m/
+[00mclient.cpp[00m     [00mMakefile[00m       [00mpoolserver.cpp[00m  [00;34mThread_1[00m/  [00;34mThread_5[00m/  [00;34mThread_9[00m/
+[00;32mcompareFiles[00m*  [00;32mperserver[00m*     [00;32mserver[00m*         [00;34mThread_2[00m/  [00;34mThread_6[00m/  [00mTimer.h[00m
+[00;32mflserver[00m*      [00mperserver.cpp[00m  [00mserver.cpp[00m      [00;34mThread_3[00m/  [00;34mThread_7[00m/  [00mtypescript[00m
+[m~/cs100/hw/hw9
+svill017@well $ make clean
+rm -R Thread* 
+rm client server poolserver perserver flserver
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00mclient.cpp[00m     [00mflserver.cpp[00m  [00mperserver.cpp[00m   [00mserver.cpp[00m  [00mtypescript[00m
+[00;32mcompareFiles[00m*  [00mMakefile[00m      [00mpoolserver.cpp[00m  [00mTimer.h[00m
+[m~/cs100/hw/hw9
+svill017@well $ echo test poolserver seems terribly slow so[K[K[K 
+test poolserver seems terribly slow
+~/cs100/hw/hw9
+svill017@well $ echo test poolserver seems terribly slow [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kmake cleanls[KcompareFiles ls[Kclient $HOSTNAME 3333
+bash: client: command not found
+~/cs100/hw/hw9
+svill017@well $ make
+g++ client.cpp -lpthread -o client
+g++ server.cpp -lpthread -o server
+g++ perserver.cpp -lpthread -o perserver
+g++ poolserver.cpp -lpthread -o poolserver
+g++ flserver.cpp -lpthread -o flserver
+~/cs100/hw/hw9
+svill017@well $ makeclient $HOSTNAME 3333
+connect refused: Connection refused
+connect refused: Connection refused
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 3333[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[Kclient $HOSTNAME 3333
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 3333
+connect refused: Connection refused
+     pm    ÿÿÿÿÿÿÿÿ        €m              Îªª*         ÿÿÿÿ                     B=         @9»A                                                                                                                                                                                                                                                                                                                                    ` B=   Aë                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 3333
+connect refused: Connection refused
+connect refused: Connection refused
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 3333
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 3333[K[K[K[K2222
+
+[1]+  Stopped                 client $HOSTNAME 2222
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 2222
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ mka[K[Kake clean
+rm -R Thread* 
+rm client server poolserver perserver flserver
+~/cs100/hw/hw9
+svill017@well $ make
+g++ client.cpp -lpthread -o client
+g++ server.cpp -lpthread -o server
+g++ perserver.cpp -lpthread -o perserver
+g++ poolserver.cpp -lpthread -o poolserver
+g++ flserver.cpp -lpthread -o flserver
+~/cs100/hw/hw9
+svill017@well $ make
+g++ client.cpp -lpthread -o client
+g++ server.cpp -lpthread -o server
+^[[A^[[Ag++ perserver.cpp -lpthread -o perserver
+^[[Ag++ poolserver.cpp -lpthread -o poolserver
+^[[Ag++ flserver.cpp -lpthread -o flserver
+^[[A~/cs100/hw/hw9
+svill017@well $ make cleanclient $HOSTNAME 22223333[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[Kclient $HOSTNAME 3333[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho test poolserver seems terribly slow [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pclient $HOSTNAME 3333[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[Kclient $HOSTNAME 3333222233332222
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 2222[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K cleanclient $HOSTNAME 22223333[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[Kclient $HOSTNAME 3333[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho test poolserver seems terribly slow [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kmake cleanls[KcompareFiles ls[Kclient $HOSTNAME 3333[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho nx been slow today lets try this again i did modify again tooo[A[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd cs100/hw/hw9ls[Kclient $HOSTNAME 44445555[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K clean[Kclient $HOSTNAME 55554444[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd cs100/hw/hw9ls[Kecho nx been slow today lets try this again i did modify again tooo[A[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclient $HOSTNAME 3333[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[KcompareFiles ls[Kmake cleanls[Kecho test poolserver seems terribly slow [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pclient $HOSTNAME 3333[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[Kclient $HOSTNAME 33332222[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pmake clean[K cleanclient $HOSTNAME 2222
+connect refused: Connection refused
+connect refused~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 2222
+time : 25.3214
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00;32mclient[00m*        [00mflserver.cpp[00m   [00;32mpoolserver[00m*     [00;34mThread_0[00m/  [00;34mThread_4[00m/  [00;34mThread_8[00m/
+[00mclient.cpp[00m     [00mMakefile[00m       [00mpoolserver.cpp[00m  [00;34mThread_1[00m/  [00;34mThread_5[00m/  [00;34mThread_9[00m/
+[00;32mcompareFiles[00m*  [00;32mperserver[00m*     [00;32mserver[00m*         [00;34mThread_2[00m/  [00;34mThread_6[00m/  [00mTimer.h[00m
+[00;32mflserver[00m*      [00mperserver.cpp[00m  [00mserver.cpp[00m      [00;34mThread_3[00m/  [00;34mThread_7[00m/  [00mtypescript[00m
+[m~/cs100/hw/hw9
+svill017@well $ compareFiles 
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00;32mclient[00m*        [00mflserver.cpp[00m   [00;32mpoolserver[00m*     [00;34mThread_0[00m/  [00;34mThread_4[00m/  [00;34mThread_8[00m/
+[00mclient.cpp[00m     [00mMakefile[00m       [00mpoolserver.cpp[00m  [00;34mThread_1[00m/  [00;34mThread_5[00m/  [00;34mThread_9[00m/
+[00;32mcompareFiles[00m*  [00;32mperserver[00m*     [00;32mserver[00m*         [00;34mThread_2[00m/  [00;34mThread_6[00m/  [00mTimer.h[00m
+[00;32mflserver[00m*      [00mperserver.cpp[00m  [00mserver.cpp[00m      [00;34mThread_3[00m/  [00;34mThread_7[00m/  [00mtypescript[00m
+[m~/cs100/hw/hw9
+svill017@well $ echo had code commented out on the previous one caused problems
+had code commented out on the previous one caused problems
+~/cs100/hw/hw9
+svill017@well $ echo no [Kw for po[K[Kfollower leader server
+now for follower leader server
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00mclient.cpp[00m     [00mflserver.cpp[00m  [00mperserver.cpp[00m   [00mserver.cpp[00m  [00mtypescript[00m
+[00;32mcompareFiles[00m*  [00mMakefile[00m      [00mpoolserver.cpp[00m  [00mTimer.h[00m
+[m~/cs100/hw/hw9
+svill017@well $ make
+g++ client.cpp -lpthread -o client
+g++ server.cpp -lpthread -o server
+g++ perserver.cpp -lpthread -o perserver
+g++ poolserver.cpp -lpthread -o poolserver
+g++ flserver.cpp -lpthread -o flserver
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00;32mclient[00m*        [00;32mflserver[00m*     [00;32mperserver[00m*     [00mpoolserver.cpp[00m  [00mTimer.h[00m
+[00mclient.cpp[00m     [00mflserver.cpp[00m  [00mperserver.cpp[00m  [00;32mserver[00m*         [00mtypescript[00m
+[00;32mcompareFiles[00m*  [00mMakefile[00m      [00;32mpoolserver[00m*    [00mserver.cpp[00m
+[m~/cs100/hw/hw9
+svill017@well $ lsmake[2Plsecho now for follower leader server[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chad code commented out on the previous one caused problems[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[KcompareFiles ls[Kclient $HOSTNAME 2222[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[Kclient $HOSTNAME 2222
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ client $HOSTNAME 2222
+connect refused: Connection refused
+~/cs100/hw/hw9
+svill017@well $ make clean
+rm -R Thread* 
+rm client server poolserver perserver flserver
+~/cs100/hw/hw9
+svill017@well $ make
+g++ client.cpp -lpthread -o client
+g++ server.cpp -lpthread -o server
+g++ perserver.cpp -lpthread -o perserver
+g++ poolserver.cpp -lpthread -o poolserver
+g++ flserver.cpp -lpthread -o flserver
+~/cs100/hw/hw9
+svill017@well $ make
+g++ client.cpp -lpthread -o client
+g++ server.cpp -lpthread -o server
+g++ perserver.cpp -lpthread -o perserver
+^[[Ag++ poolserver.cpp -lpthread -o poolserver
+g++ flserver.cpp -lpthread -o flserver
+^[[A^[[A~/cs100/hw/hw9
+svill017@well $ make cleanclient $HOSTNAME 2222[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kmake[2Plsecho now for follower leader server[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chad code commented out on the previous one caused problems[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pnow for follower leader server[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kmake[2Plsclient $HOSTNAME 2222
+time : 1.55154
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00;32mclient[00m*        [00mflserver.cpp[00m   [00;32mpoolserver[00m*     [00;34mThread_0[00m/  [00;34mThread_4[00m/  [00;34mThread_8[00m/
+[00mclient.cpp[00m     [00mMakefile[00m       [00mpoolserver.cpp[00m  [00;34mThread_1[00m/  [00;34mThread_5[00m/  [00;34mThread_9[00m/
+[00;32mcompareFiles[00m*  [00;32mperserver[00m*     [00;32mserver[00m*         [00;34mThread_2[00m/  [00;34mThread_6[00m/  [00mTimer.h[00m
+[00;32mflserver[00m*      [00mperserver.cpp[00m  [00mserver.cpp[00m      [00;34mThread_3[00m/  [00;34mThread_7[00m/  [00mtypescript[00m
+[m~/cs100/hw/hw9
+svill017@well $ compareFiles 
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00;32mclient[00m*        [00mflserver.cpp[00m   [00;32mpoolserver[00m*     [00;34mThread_0[00m/  [00;34mThread_4[00m/  [00;34mThread_8[00m/
+[00mclient.cpp[00m     [00mMakefile[00m       [00mpoolserver.cpp[00m  [00;34mThread_1[00m/  [00;34mThread_5[00m/  [00;34mThread_9[00m/
+[00;32mcompareFiles[00m*  [00;32mperserver[00m*     [00;32mserver[00m*         [00;34mThread_2[00m/  [00;34mThread_6[00m/  [00mTimer.h[00m
+[00;32mflserver[00m*      [00mperserver.cpp[00m  [00mserver.cpp[00m      [00;34mThread_3[00m/  [00;34mThread_7[00m/  [00mtypescript[00m
+[m~/cs100/hw/hw9
+svill017@well $ echo thats done on[K[Kthank you for a[Kthe pleasan qu[K[K[Kt quarg[Kter 
+thats done thank you for the pleasant quarter
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00;32mclient[00m*        [00mflserver.cpp[00m   [00;32mpoolserver[00m*     [00;34mThread_0[00m/  [00;34mThread_4[00m/  [00;34mThread_8[00m/
+[00mclient.cpp[00m     [00mMakefile[00m       [00mpoolserver.cpp[00m  [00;34mThread_1[00m/  [00;34mThread_5[00m/  [00;34mThread_9[00m/
+[00;32mcompareFiles[00m*  [00;32mperserver[00m*     [00;32mserver[00m*         [00;34mThread_2[00m/  [00;34mThread_6[00m/  [00mTimer.h[00m
+[00;32mflserver[00m*      [00mperserver.cpp[00m  [00mserver.cpp[00m      [00;34mThread_3[00m/  [00;34mThread_7[00m/  [00mtypescript[00m
+[m~/cs100/hw/hw9
+svill017@well $ q[Keixt[K[K[K[Kmake clean
+rm -R Thread* 
+rm client server poolserver perserver flserver
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00mclient.cpp[00m     [00mflserver.cpp[00m  [00mperserver.cpp[00m   [00mserver.cpp[00m  [00mtypescript[00m
+[00;32mcompareFiles[00m*  [00mMakefile[00m      [00mpoolserver.cpp[00m  [00mTimer.h[00m
+[m~/cs100/hw/hw9
+svill017@well $ tar -czvf[K[K[K[Kxvzf hw9.tgz *
+tar: hw9.tgz: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: client.cpp: Not found in archive
+tar: compareFiles: Not found in archive
+tar: flserver.cpp: Not found in archive
+tar: Makefile: Not found in archive
+tar: perserver.cpp: Not found in archive
+tar: poolserver.cpp: Not found in archive
+tar: server.cpp: Not found in archive
+tar: Timer.h: Not found in archive
+tar: typescript: Not found in archive
+tar: Error exit delayed from previous errors
+~/cs100/hw/hw9
+svill017@well $ tar -xvzf hw9.tgz *[1P[4hc[4l
+client.cpp
+compareFiles
+flserver.cpp
+Makefile
+perserver.cpp
+poolserver.cpp
+server.cpp
+Timer.h
+typescript
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00mclient.cpp[00m     [00mflserver.cpp[00m  [00mMakefile[00m       [00mpoolserver.cpp[00m  [00mTimer.h[00m
+[00;32mcompareFiles[00m*  [00;31mhw9.tgz[00m       [00mperserver.cpp[00m  [00mserver.cpp[00m      [00mtypescript[00m
+[m~/cs100/hw/hw9
+svill017@well $ rm hw9.tgz 
+/bin/rm: remove regular file `hw9.tgz'? y
+~/cs100/hw/hw9
+svill017@well $ rm hw9.tgz ls[Krm hw9.tgz [C[C[Cls[Ktar -cvzf hw9.tgz *[C[C[4ht[4l[4ha[4l[4hr[4l[4h.[4l[C[C[C[C[C
+client.cpp
+compareFiles
+flserver.cpp
+Makefile
+perserver.cpp
+poolserver.cpp
+server.cpp
+Timer.h
+typescript
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00mclient.cpp[00m     [00mflserver.cpp[00m  [00mMakefile[00m       [00mpoolserver.cpp[00m  [00mTimer.h[00m
+[00;32mcompareFiles[00m*  [00;31mhw9.tar.tgz[00m   [00mperserver.cpp[00m  [00mserver.cpp[00m      [00mtypescript[00m
+[m~/cs100/hw/hw9
+svill017@well $ quit[K[K[K[Kexit
+exit
+There are stopped jobs.
+~/cs100/hw/hw9
+svill017@well $ quit
+bash: quit: command not found
+~/cs100/hw/hw9
+svill017@well $ exit
+exit
+There are stopped jobs.
+~/cs100/hw/hw9
+svill017@well $ ls
+[00m[00mclient.cpp[00m     [00mflserver.cpp[00m  [00mMakefile[00m       [00mpoolserver.cpp[00m  [00mTimer.h[00m
+[00;32mcompareFiles[00m*  [00;31mhw9.tar.tgz[00m   [00mperserver.cpp[00m  [00mserver.cpp[00m      [00mtypescript[00m
+[m~/cs100/hw/hw9
+svill017@well $ exit
+exit
+There are stopped jobs.
+~/cs100/hw/hw9
+svill017@well $ exit
+exit
+
+Script done on Fri 07 Dec 2012 01:26:21 AM PST

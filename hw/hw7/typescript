@@ -1,0 +1,179 @@
+Script started on Sat 24 Nov 2012 02:20:56 AM PST
+~
+svill017@well $ ls
+[0m[01;34mcs010[0m/  [01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mex3.asm[0m*                [01;34msummer[0m/     [01;34mWINDOWS[0m/
+[01;34mcs012[0m/  [01;34mcs100[0m/  [01;34mDesktop[0m/  [01;32mFirefox_wallpaper.png[0m*  [0mtypescript[0m  [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hw5[K8[K7
+~/cs100/hw/hw7
+svill017@well $ ls
+[0m[01;32mdircheck[0m*  [01;32mfreq[0m*     [0minput.txt[0m  [0mmy_find[0m    [0moddOrEven.cpp[0m  [01;32mOorE[0m*     [0mtypescript[0m
+[0meven.txt[0m   [0mfreq.cpp[0m  [0mMakefile[0m   [01;32mmy_which[0m*  [0modd.txt[0m        [01;34mtempdir[0m/
+[m~/cs100/hw/hw7
+svill017@well $ make clean
+rm freq OorE
+~/cs100/hw/hw7
+svill017@well $ make
+g++ -ggdb freq.cpp -o freq
+g++ -ggdb oddOrEven.cpp -o OorE
+~/cs100/hw/hw7
+svill017@well $ ls
+[0m[01;32mdircheck[0m*  [01;32mfreq[0m*     [0minput.txt[0m  [0mmy_find[0m    [0moddOrEven.cpp[0m  [01;32mOorE[0m*     [0mtypescript[0m
+[0meven.txt[0m   [0mfreq.cpp[0m  [0mMakefile[0m   [01;32mmy_which[0m*  [0modd.txt[0m        [01;34mtempdir[0m/
+[m~/cs100/hw/hw7
+svill017@well $ freq
+hi how are you? its been very good but you know how it is. or have you been else where doing the hard stuff? a dog and an octopus can swim ,  
+ 1
+, 1
+are 1
+been 2
+can 1
+dog 1
+doing 1
+else 1
+good 1
+hard 1
+have 1
+hi 1
+how 2
+is. 1
+it 1
+its 1
+know 1
+octopus 1
+stuff? 1
+swim 1
+very 1
+where 1
+you 2
+you? 1
+~/cs100/hw/hw7
+svill017@well $ ls
+[0m[01;32mdircheck[0m*  [01;32mfreq[0m*     [0minput.txt[0m  [0mmy_find[0m    [0moddOrEven.cpp[0m  [01;32mOorE[0m*     [0mtypescript[0m
+[0meven.txt[0m   [0mfreq.cpp[0m  [0mMakefile[0m   [01;32mmy_which[0m*  [0modd.txt[0m        [01;34mtempdir[0m/
+[m~/cs100/hw/hw7
+svill017@well $ OorE
+enter number of ints you want processed :10
+1
+2
+3
+4
+6
+5
+4
+234
+543
+234561
+~/cs100/hw/hw7
+svill017@well $ less even.txt 
+[?1049h[?1h=2
+4
+4
+6
+234
+[7meven.txt (END) [27m[K[K[?1l>[?1049l~/cs100/hw/hw7
+svill017@well $ odd.t[K[K[K[K[Kless odd.txt 
+[?1049h[?1h=1
+3
+5
+543
+234561
+[7modd.txt (END) [27m[K[K[?1l>[?1049l~/cs100/hw/hw7
+svill017@well $ ls
+[0m[01;32mdircheck[0m*  [01;32mfreq[0m*     [0minput.txt[0m  [0mmy_find[0m    [0moddOrEven.cpp[0m  [01;32mOorE[0m*     [0mtypescript[0m
+[0meven.txt[0m   [0mfreq.cpp[0m  [0mMakefile[0m   [01;32mmy_which[0m*  [0modd.txt[0m        [01;34mtempdir[0m/
+[m~/cs100/hw/hw7
+svill017@well $ my_which freq
+./freq
+~/cs100/hw/hw7
+svill017@well $ my_which OorE
+./OorE
+~/cs100/hw/hw7
+svill017@well $ my_which odd.txt 
+./odd.txt
+~/cs100/hw/hw7
+svill017@well $ exit
+exit
+
+Script done on Sat 24 Nov 2012 02:23:00 AM PST
+Script started on Sat 24 Nov 2012 02:30:37 AM PST
+~
+svill017@well $ ls
+[0m[01;34mcs010[0m/  [01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mex3.asm[0m*                [01;34msummer[0m/     [01;34mWINDOWS[0m/
+[01;34mcs012[0m/  [01;34mcs100[0m/  [01;34mDesktop[0m/  [01;32mFirefox_wallpaper.png[0m*  [0mtypescript[0m  [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hw7
+~/cs100/hw/hw7
+svill017@well $ ls
+[0m[01;32mdircheck[0m*  [01;32mfreq[0m*     [0minput.txt[0m  [0mmy_find[0m    [0moddOrEven.cpp[0m  [01;32mOorE[0m*     [0mtypescript[0m
+[0meven.txt[0m   [0mfreq.cpp[0m  [0mMakefile[0m   [01;32mmy_which[0m*  [0modd.txt[0m        [01;34mtempdir[0m/
+[m~/cs100/hw/hw7
+svill017@well $ my_which -[K[K odd.txt 
+not found
+~/cs100/hw/hw7
+svill017@well $ ls
+[0m[01;32mdircheck[0m*  [01;32mfreq[0m*     [0minput.txt[0m  [0mmy_find[0m    [0moddOrEven.cpp[0m  [01;32mOorE[0m*     [0mtypescript[0m
+[0meven.txt[0m   [0mfreq.cpp[0m  [0mMakefile[0m   [01;32mmy_which[0m*  [0modd.txt[0m        [01;34mtempdir[0m/
+[m~/cs100/hw/hw7
+svill017@well $ dircheck ..[K[K./ ../
+number of directories: 1
+number of files in working directory: 12
+list of zero lenth files:
+space used:
+336	./
+number of directories: 1
+number of files in working directory: 24
+list of zero lenth files:
+../hw1/save
+../hw3/out.txt
+../hw3/SSH_AGENT_PID=22949
+space used:
+55296	../
+~/cs100/hw/hw7
+svill017@well $ exit
+exit
+
+Script done on Sat 24 Nov 2012 02:31:51 AM PST
+Script started on Sun 25 Nov 2012 12:07:22 AM PST
+~
+svill017@well $ ls
+[0m[01;34mcs010[0m/  [01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mex3.asm[0m*                [01;34msummer[0m/     [01;34mWINDOWS[0m/
+[01;34mcs012[0m/  [01;34mcs100[0m/  [01;34mDesktop[0m/  [01;32mFirefox_wallpaper.png[0m*  [0mtypescript[0m  [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hwt[Ky[K6[K7
+~/cs100/hw/hw7
+svill017@well $ ls
+[0m[01;32mdircheck[0m*  [01;32mfreq[0m*     [0minput.txt[0m  [01;32mmy_find[0m*   [0moddOrEven.cpp[0m  [01;32mOorE[0m*     [0mtemp.txt[0m
+[0meven.txt[0m   [0mfreq.cpp[0m  [0mMakefile[0m   [01;32mmy_which[0m*  [0modd.txt[0m        [01;34mtempdir[0m/  [0mtypescript[0m
+[m~/cs100/hw/hw7
+svill017@well $ lscd cs100/hw/hw7ls[Kfirefoxgvim typescript [9Pfirefoxgvim typescript ls[Kcd cs100/hw/hw7ls[Kexit[2Plsscript -a typescript [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kmy_which odd.txt[2Pgvim my_which which odd.txt[Cmy_which odd.txt[3Pfreqgvim my_which ls[Kscript[4Plsrm typescript ls[Krm typescript ls[Kscript[4Plsgvim my_which [1Pmy_which freqodd.txt[2Pwhich odd.txt gvim my_which[Cmy_which odd.txtls[Kscript -a typescript [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kexit[2Plscd cs100/hw/hw7ls[Kgvim typescript [9Pfirefoxls[Kcd cs100/hw/hw7ls[K[Kls
+[0m[01;32mdircheck[0m*  [01;32mfreq[0m*     [0minput.txt[0m  [01;32mmy_find[0m*   [0moddOrEven.cpp[0m  [01;32mOorE[0m*     [0mtemp.txt[0m
+[0meven.txt[0m   [0mfreq.cpp[0m  [0mMakefile[0m   [01;32mmy_which[0m*  [0modd.txt[0m        [01;34mtempdir[0m/  [0mtypescript[0m
+[m~/cs100/hw/hw7
+svill017@well $ my_find . -n[Kname tempnothere -type f -print
+~/cs100/hw/hw7
+svill017@well $ echo it means it wasnt found due to no output
+it means it wasnt found due to no output
+~/cs100/hw/hw7
+svill017@well $ echo it means it wasnt found due to no output[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmy_find . -name tempnothere -type f -print[1P[1P[1P[1P[1P[1P[1P[1@.[1@t[1@x[1@t
+found ./temp.txt
+~/cs100/hw/hw7
+svill017@well $ my_find . -name temp.txt -type f -print -exec bin/b[Krm -f {} \;
+found ./temp.txt
+./my_find: line 23: bin/rm: No such file or directory
+~/cs100/hw/hw7
+svill017@well $ my_find . -name temp.txt -type f -print -exec bin/rm -f {} \;[C[C[C[C[C[1@/[1P[C[1@/
+found ./temp.txt
+~/cs100/hw/hw7
+svill017@well $ ls
+[0m[01;32mdircheck[0m*  [01;32mfreq[0m*     [0minput.txt[0m  [01;32mmy_find[0m*   [0moddOrEven.cpp[0m  [01;32mOorE[0m*     [0mtypescript[0m
+[0meven.txt[0m   [0mfreq.cpp[0m  [0mMakefile[0m   [01;32mmy_which[0m*  [0modd.txt[0m        [01;34mtempdir[0m/
+[m~/cs100/hw/hw7
+svill017@well $ echo found txt then rm'd
+loop $ bash: unexpected EOF while looking for matching `''
+bash: syntax error: unexpected end of file
+~/cs100/hw/hw7
+svill017@well $ exit
+exit
+
+Script done on Sun 25 Nov 2012 12:12:01 AM PST

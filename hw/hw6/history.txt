@@ -1,0 +1,9 @@
+1. to redo the previous ls command with *.h instead of *.cpp
+	!ls:s/cpp/h
+
+2. to open vim on all prvious commands to g++
+	vim !g++:1-$
+
+3 to g++ swaping first and second arguement
+	g++ !g++:2 !g++:1 !g++:3-$
+

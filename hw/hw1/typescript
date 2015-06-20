@@ -1,0 +1,209 @@
+Script started on Wed 10 Oct 2012 05:39:49 AM PDT
+~
+svill017@well $ ls
+[0m[01;34mcs010[0m/  [01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mFirefox_wallpaper.png[0m*  [01;34mWINDOWS[0m/
+[01;34mcs012[0m/  [01;34mcs100[0m/  [01;34mDesktop[0m/  [01;34msummer[0m/                 [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hw1
+~/cs100/hw/hw1
+svill017@well $ ls
+[0m[0madsj[0m   [01;32ma.out[0m*            [0mrolodex.cc[0m  [0msave[0m      [0mstack.h[0m
+[0malone[0m  [0mrolodexbackup.cc[0m  [0msam.txt[0m     [0mstack.cc[0m  [0mtypescript[0m
+[m~/cs100/hw/hw1
+svill017@well $ g++ stack.cc
+~/cs100/hw/hw1
+svill017@well $ a.out
+this will be backwards!
+!sdrawkcabeblliwsiht~/cs100/hw/hw1
+svill017@well $ g++ rolodex.cc 
+~/cs100/hw/hw1
+svill017@well $ a.out
+Welcome to your rolodex!
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+i:insert f:get address d:delete p:print l:load s:save q:quit
+l
+provide file name
+save
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+          alone             guy             321             123
+            dun            hard       2234syper        22345234
+            ben              ne           23432          234324
+            jun              wa           234hi         2343234
+i:insert f:get address d:delete p:print l:load s:save q:quit
+f
+ provide last name
+wa
+234hi
+i:insert f:get address d:delete p:print l:load s:save q:quit
+f
+ provide last name
+hard
+2234syper
+i:insert f:get address d:delete p:print l:load s:save q:quit
+i
+provide name(first space last) adress and phone number(both no space):
+new guy 123under 234098-098
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+            new             guy        123under      234098-098
+          alone             guy             321             123
+            dun            hard       2234syper        22345234
+            ben              ne           23432          234324
+            jun              wa           234hi         2343234
+i:insert f:get address d:delete p:print l:load s:save q:quit
+f
+ provide last name
+guy
+123under
+i:insert f:get address d:delete p:print l:load s:save q:quit
+d
+provide last name
+guy
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+          alone             guy             321             123
+            dun            hard       2234syper        22345234
+            ben              ne           23432          234324
+            jun              wa           234hi         2343234
+i:insert f:get address d:delete p:print l:load s:save q:quit
+d
+provide last name
+guy
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+            dun            hard       2234syper        22345234
+            ben              ne           23432          234324
+            jun              wa           234hi         2343234
+i:insert f:get address d:delete p:print l:load s:save q:quit
+l
+provide file name
+sam.txt
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+            dun            hard       2234syper        22345234
+            ben              ne           23432          234324
+            sam               v               1               2
+            jun              wa           234hi         2343234
+i:insert f:get address d:delete p:print l:load s:save q:quit
+d
+provide last name
+wa
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+            dun            hard       2234syper        22345234
+            ben              ne           23432          234324
+            sam               v               1               2
+i:insert f:get address d:delete p:print l:load s:save q:quit
+s
+provide file name
+dbs   savefunction
+i:insert f:get address d:delete p:print l:load s:save q:quit
+q
+~/cs100/hw/hw1
+svill017@well $ a.out
+Welcome to your rolodex!
+i:insert f:get address d:delete p:print l:load s:save q:quit
+l
+provide file name
+savefunction
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+            dun            hard       2234syper        22345234
+            ben              ne           23432          234324
+            sam               v               1               2
+i:insert f:get address d:delete p:print l:load s:save q:quit
+i
+provide name(first space last) adress and phone number(both no space):
+new guy   zguy 234last 23049800-98
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+            dun            hard       2234syper        22345234
+            ben              ne           23432          234324
+            sam               v               1               2
+            new            zguy         234last     23049800-98
+i:insert f:get address d:delete p:print l:load s:save q:quit
+q
+~/cs100/hw/hw1
+svill017@well $ l
+bash: l: command not found
+~/cs100/hw/hw1
+svill017@well $ s[Ka.out
+Welcome to your rolodex!
+i:insert f:get address d:delete p:print l:load s:save q:quit
+l
+provide file name
+save
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+            dun            hard       2234syper        22345234
+            ben              ne           23432          234324
+            sam               v               1               2
+            new            zguy         234last     23049800-98
+i:insert f:get address d:delete p:print l:load s:save q:quit
+d
+provide last name
+hard
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+            ben              ne           23432          234324
+            sam               v               1               2
+            new            zguy         234last     23049800-98
+i:insert f:get address d:delete p:print l:load s:save q:quit
+d ne   
+provide last name
+ne
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+            sam               v               1               2
+            new            zguy         234last     23049800-98
+i:insert f:get address d:delete p:print l:load s:save q:quit
+d
+provide last name
+v
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+            new            zguy         234last     23049800-98
+i:insert f:get address d:delete p:print l:load s:save q:quit
+d
+provide last name
+zguy
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+i:insert f:get address d:delete p:print l:load s:save q:quit
+q
+~/cs100/hw/hw1
+svill017@well $ a.out
+Welcome to your rolodex!
+i:insert f:get address d:delete p:print l:load s:save q:quit
+l
+provide file name
+save
+i:insert f:get address d:delete p:print l:load s:save q:quit
+p
+    First Name-     Last Name-        Address         Number
+i:insert f:get address d:delete p:print l:load s:save q:quit
+q
+~/cs100/hw/hw1
+svill017@well $ hope [K[K[K[K[Kfirst time sc[K[Kusing script hope this was adequate representation of  my rolodex 
+bash: first: command not found
+~/cs100/hw/hw1
+svill017@well $ exit
+exit
+
+Script done on Wed 10 Oct 2012 05:45:36 AM PDT

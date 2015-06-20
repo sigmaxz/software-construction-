@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# this is my own version of which
+
+path=(`echo $PATH | tr ":" " "`)
+for f in ${path[*]}
+do
+	if [ -x $f\/$1 ] 
+	then echo $f\/$1
+	elif [ -e $f\/$1 ]
+	then echo not found
+	fi
+done 

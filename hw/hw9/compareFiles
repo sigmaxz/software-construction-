@@ -1,0 +1,19 @@
+#!/bin/bash
+
+var="Thread_0 Thread_1 Thread_2 Thread_3 Thread_4 Thread_5 Thread_6 Thread_7 Thread_8 Thread_9"
+
+for f in $var
+do
+	diff /usr/share/dict/words $PWD\/$f\/words
+	diff /usr/include/assert.h $PWD\/$f\/assert.h
+	diff /usr/include/ctype.h $PWD\/$f\/ctype.h
+	diff /usr/include/errno.h $PWD\/$f\/errno.h
+	diff /usr/include/fstab.h $PWD\/$f\/fstab.h
+	diff /usr/include/math.h $PWD\/$f\/math.h
+	diff /usr/include/memory.h $PWD\/$f\/memory.h
+	diff /usr/include/ncurses.h $PWD\/$f\/ncurses.h
+	diff /usr/include/pthread.h $PWD\/$f\/pthread.h
+	diff /usr/include/setjmp.h $PWD\/$f\/setjmp.h
+	diff /usr/include/stdlib.h $PWD\/$f\/stdlib.h
+	diff /usr/include/strings.h $PWD\/$f\/strings.h
+done

@@ -1,0 +1,195 @@
+Script started on Thu 15 Nov 2012 09:47:20 PM PST
+~
+svill017@well $ ls
+[0m[01;34mcs010[0m/  [01;34mcs014[0m/  [01;34mcs61[0m/     [01;32mex3.asm[0m*                [01;34msummer[0m/     [01;34mWINDOWS[0m/
+[01;34mcs012[0m/  [01;34mcs100[0m/  [01;34mDesktop[0m/  [01;32mFirefox_wallpaper.png[0m*  [0mtypescript[0m  [01;34mz[0m/
+[m~
+svill017@well $ cd cs100/hw/hw6
+~/cs100/hw/hw6
+svill017@well $ ls
+[0m[0mArray.cpp[0m    [0mhistory.txt[0m  [0mMatrix.cpp[0m    [0mMmain.cpp[0m     [0mtypescript[0m
+[0mArray.h[0m      [0mMakefile[0m     [0mMatrix.h[0m      [01;32mmy_shell[0m*
+[0mArray.h.gch[0m  [01;32mMatrix[0m*      [0mMatrix.h.gch[0m  [0mmy_shell.cpp[0m
+[m~/cs100/hw/hw6
+svill017@well $ make clean
+rm Matrix my_shell
+~/cs100/hw/hw6
+svill017@well $ ls
+[0m[0mArray.cpp[0m  [0mArray.h.gch[0m  [0mMakefile[0m    [0mMatrix.h[0m      [0mMmain.cpp[0m     [0mtypescript[0m
+[0mArray.h[0m    [0mhistory.txt[0m  [0mMatrix.cpp[0m  [0mMatrix.h.gch[0m  [0mmy_shell.cpp[0m
+[m~/cs100/hw/hw6
+svill017@well $ make all
+g++ -ggdb my_shell.cpp -o my_shell
+g++ -ggdb Mmain.cpp -o Matrix
+~/cs100/hw/hw6
+svill017@well $ ls
+[0m[0mArray.cpp[0m    [0mhistory.txt[0m  [0mMatrix.cpp[0m    [0mMmain.cpp[0m     [0mtypescript[0m
+[0mArray.h[0m      [0mMakefile[0m     [0mMatrix.h[0m      [01;32mmy_shell[0m*
+[0mArray.h.gch[0m  [01;32mMatrix[0m*      [0mMatrix.h.gch[0m  [0mmy_shell.cpp[0m
+[m~/cs100/hw/hw6
+svill017@well $ Matrix
+    0    0    0    0    0
+    0    1    2    3    4
+    0    2    4    6    8
+    0    3    6    9   12
+    0    4    8   12   16
+    0    5   10   15   20
+    0    6   12   18   24
+    0    7   14   21   28
+    0    8   16   24   32
+    0    9   18   27   36
+    0    0    0    0    0    0    0    0    0    0
+    0    1    2    3    4    5    6    7    8    9
+    0    2    4    6    8   10   12   14   16   18
+    0    3    6    9   12   15   18   21   24   27
+    0    4    8   12   16   20   24   28   32   36
+    0    5   10   15   20   25   30   35   40   45
+    0    6   12   18   24   30   36   42   48   54
+    0    7   14   21   28   35   42   49   56   63
+exception caught for rows
+exception caught for cols~/cs100/hw/hw6
+svill017@well $ ls
+[0m[0mArray.cpp[0m    [0mhistory.txt[0m  [0mMatrix.cpp[0m    [0mMmain.cpp[0m     [0mtypescript[0m
+[0mArray.h[0m      [0mMakefile[0m     [0mMatrix.h[0m      [01;32mmy_shell[0m*
+[0mArray.h.gch[0m  [01;32mMatrix[0m*      [0mMatrix.h.gch[0m  [0mmy_shell.cpp[0m
+[m~/cs100/hw/hw6
+svill017@well $ less history.txt 
+[?1049h[?1h=1. to redo the previous ls command with *.h instead of *.cpp
+        !ls:s/cpp/h
+
+2. to open vim on all prvious commands to g++
+        vim !g++:1-$
+
+3 to g++ swaping first and second arguement
+        g++ !g++:2 !g++:1 !g++:3-$
+
+[7mhistory.txt (END) [27m[K[K[?1l>[?1049l~/cs100/hw/hw6
+svill017@well $ exit
+exit
+
+Script done on Thu 15 Nov 2012 09:47:56 PM PST
+Script started on Thu 15 Nov 2012 10:11:43 PM PST
+~
+svill017@well $ ls
+[00m[00;34mcs010[00m/  [00;34mcs014[00m/  [00;34mcs61[00m/     [00;32mex3.asm[00m*                [00;34msummer[00m/     [00;34mWINDOWS[00m/
+[00;34mcs012[00m/  [00;34mcs100[00m/  [00;34mDesktop[00m/  [00;32mFirefox_wallpaper.png[00m*  [00mtypescript[00m  [00;34mz[00m/
+[m~
+svill017@well $ cd cs100/hw/hw4[K5[K6
+~/cs100/hw/hw6
+svill017@well $ ls
+[00m[00mArray.cpp[00m    [00mhistory.txt[00m  [00mMatrix.cpp[00m    [00mMmain.cpp[00m     [00mtypescript[00m
+[00mArray.h[00m      [00mMakefile[00m     [00mMatrix.h[00m      [00;32mmy_shell[00m*
+[00mArray.h.gch[00m  [00;32mMatrix[00m*      [00mMatrix.h.gch[00m  [00mmy_shell.cpp[00m
+[m~/cs100/hw/hw6
+svill017@well $ my_shell
+%ls * &
+%sleepy time
+ls
+sleepy time
+sleep ends
+%%ls
+sleepy time
+sleep ends
+Array.cpp    Makefile	 Matrix.h      history.txt   typescript
+Array.h      Matrix	 Matrix.h.gch  my_shell
+Array.h.gch  Matrix.cpp  Mmain.cpp     my_shell.cpp
+%ls .
+sleepy time
+sleep ends
+Array.cpp    Makefile	 Matrix.h      history.txt   typescript
+Array.h      Matrix	 Matrix.h.gch  my_shell
+Array.h.gch  Matrix.cpp  Mmain.cpp     my_shell.cpp
+%ls x   . &
+%sleepy time
+ls
+sleepy time
+%sleep ends
+%Array.cpp    Makefile	 Matrix.h      history.txt   typescript
+Array.h      Matrix	 Matrix.h.gch  my_shell
+Array.h.gch  Matrix.cpp  Mmain.cpp     my_shell.cpp
+%ls . &
+%sleepy time
+ls
+sleep ends
+Array.cpp    Makefile	 Matrix.h      history.txt   typescript
+Array.h      Matrix	 Matrix.h.gch  my_shell
+Array.h.gch  Matrix.cpp  Mmain.cpp     my_shell.cpp
+sleepy time
+sleep ends
+Array.cpp    Makefile	 Matrix.h      history.txt   typescript
+Array.h      Matrix	 Matrix.h.gch  my_shell
+Array.h.gch  Matrix.cpp  Mmain.cpp     my_shell.cpp
+%ls & 
+%sleepy time
+ls
+sleepy time
+Terminated
+~/cs100/hw/hw6
+svill017@well $ quit
+bash: quit: command not found
+~/cs100/hw/hw6
+svill017@well $ ls
+[00m[00mArray.cpp[00m    [00mhistory.txt[00m  [00mMatrix.cpp[00m    [00mMmain.cpp[00m     [00mtypescript[00m
+[00mArray.h[00m      [00mMakefile[00m     [00mMatrix.h[00m      [00;32mmy_shell[00m*
+[00mArray.h.gch[00m  [00;32mMatrix[00m*      [00mMatrix.h.gch[00m  [00mmy_shell.cpp[00m
+[m~/cs100/hw/hw6
+svill017@well $ quit
+bash: quit: command not found
+~/cs100/hw/hw6
+svill017@well $ exi
+bash: exi: command not found
+~/cs100/hw/hw6
+svill017@well $ w[Kexit
+exit
+
+Script done on Thu 15 Nov 2012 10:14:03 PM PST
+Script started on Thu 15 Nov 2012 10:29:22 PM PST
+~
+svill017@well $ cd cs100/hw/hw5[K6
+~/cs100/hw/hw6
+svill017@well $ ls
+[0m[0mArray.cpp[0m    [0mhistory.txt[0m  [0mMatrix.cpp[0m    [0mMmain.cpp[0m     [0mtypescript[0m
+[0mArray.h[0m      [0mMakefile[0m     [0mMatrix.h[0m      [01;32mmy_shell[0m*
+[0mArray.h.gch[0m  [01;32mMatrix[0m*      [0mMatrix.h.gch[0m  [0mmy_shell.cpp[0m
+[m~/cs100/hw/hw6
+svill017@well $ my_shell
+%ls & 
+%sleepy time
+ls
+sleepy time
+%%sleep ends
+Array.cpp    Makefile	 Matrix.h      history.txt   typescript
+Array.h      Matrix	 Matrix.h.gch  my_shell
+Array.h.gch  Matrix.cpp  Mmain.cpp     my_shell.cpp
+%
+[1]+  Stopped                 my_shell
+~/cs100/hw/hw6
+svill017@well $ exit
+exit
+There are stopped jobs.
+~/cs100/hw/hw6
+svill017@well $ quit
+bash: quit: command not found
+~/cs100/hw/hw6
+svill017@well $ ls
+[0m[0mArray.cpp[0m    [0mhistory.txt[0m  [0mMatrix.cpp[0m    [0mMmain.cpp[0m     [0mtypescript[0m
+[0mArray.h[0m      [0mMakefile[0m     [0mMatrix.h[0m      [01;32mmy_shell[0m*
+[0mArray.h.gch[0m  [01;32mMatrix[0m*      [0mMatrix.h.gch[0m  [0mmy_shell.cpp[0m
+[m~/cs100/hw/hw6
+svill017@well $ quit
+bash: quit: command not found
+~/cs100/hw/hw6
+svill017@well $ quit
+bash: quit: command not found
+~/cs100/hw/hw6
+svill017@well $ quit
+bash: quit: command not found
+~/cs100/hw/hw6
+svill017@well $ exit
+exit
+There are stopped jobs.
+~/cs100/hw/hw6
+svill017@well $ exit
+exit
+
+Script done on Thu 15 Nov 2012 10:30:13 PM PST

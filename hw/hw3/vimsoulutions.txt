@@ -1,0 +1,9 @@
+1) assuming your at the back use : b , cw , i, an idiot 
+2) ma then a' then IF
+3) `a then a then " savant"
+4) ?F then ~
+5) O then ZZ 
+
+6) :map! \fo for(;;)<CR>{<CR><Tab>><CR>}<ESC>?;<CR>ni
+
+7) :map !s :%s/<tab>/<space><space><space><space>/g
